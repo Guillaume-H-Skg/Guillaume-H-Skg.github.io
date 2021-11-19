@@ -1,0 +1,197 @@
+main {
+  background-color: white;
+  padding: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  min-height: 42px;
+  max-height: 300px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: monofonto;
+  font-size: 1.4em;
+}
+
+fieldset {
+  border: 3px solid #12c05e;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+legend {
+  font-size: 2em;
+  font-weight: normal;
+  font-family: monofonto;
+  font-style: italic;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 4px #000000;
+  color: #12c05e;
+  letter-spacing: 2px;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  float: right;
+  background-color: transparent;
+  color: white;
+  width: 20%;
+  padding: 12px;
+  border: 3px solid #12c05e;
+  border-radius: 10px;
+  margin: 4% 0;
+  font-size: 1.5em;
+  line-height: 20px;
+  text-decoration: none;
+  width: auto;
+  font-family: monofonto;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+input[type=submit]:hover {
+  background-color: #12c05e;
+}
+
+.inscription_container {
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-image: url('../image/fond_inscription.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  max-width: 1000px;
+  margin: auto;
+
+}
+
+.inscription_col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.inscription_col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.inscription_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slide_container {
+  width: 100%;
+  margin: 40px 0px;
+  text-align: center;
+}
+
+.slide_container::before {
+  content: "Débutant";
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.slide_container::after {
+  content: "Expert";
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.slider {
+  margin: auto;
+  -webkit-appearance: none;
+  width: 82%;
+  height: 15px;
+  border-radius: 5px;
+  background: #fff;
+  outline: none;
+  opacity: 1;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #12c05e;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #12c05e;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1020px) {
+  .slider {
+    margin: auto;
+    -webkit-appearance: none;
+    width: 70%;
+    height: 15px;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    opacity: 1;
+
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .inscription_col-25,
+  .inscription_col-75 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  input[type=submit] {
+    width: 100%;
+  }
+
+  .slide_container {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .inscription_container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    background-image: url('../image/fond_inscription.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    max-width: 1000px;
+    margin: 0px -20px;
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .slider {
+    width: 50%;
+  }
+}

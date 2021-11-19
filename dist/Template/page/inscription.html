@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <title>Pip-boy | Inscription</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/globale_style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/inscription_style.css" type="text/css" media="screen" />
+    <link rel="icon" type="image/png" href="../image/pip_boy_onglet.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>PIP-BOY</h1>
+      <p>L'un des meilleurs inventaires, maintenant en ligne</p>
+    </header>
+
+    <nav>
+      <a id="logo" href="../index.html"><img class="nav_img" src="../image/pip_boy_onglet.png" alt="Logo de la Navbar"></a>
+      <a href="fonctionnalite.html"><i class="fa fa-list">&nbsp;</i>Fonctionnalités</a>
+      <a href="histoire.html"><i class="fa fa-book">&nbsp;</i>Histoire</a>
+      <a href="inscription.html" class="right active"><i class="fa fa-envelope">&nbsp;</i>Inscription</a>
+    </nav>
+
+
+    <main>
+      <h2>Inscription</h2>
+
+      <div class="inscription_container">
+
+        <form method="post" action="mailto:pip-boyWeb@gmail.com">
+          <fieldset>
+            <legend>Informations personnelles</legend>
+            <div class="inscription_row">
+              <div class="inscription_col-25">
+                <label for="prenom">Prénom&nbsp;:</label>
+              </div>
+              <div class="inscription_col-75">
+                <input type="text" id="prenom" name="prenom" maxlength="30" placeholder="Votre prénom" required>
+              </div>
+            </div>
+            <div class="inscription_row">
+              <div class="inscription_col-25">
+                <label for="nom">Nom&nbsp;:</label>
+              </div>
+              <div class="inscription_col-75">
+                <input type="text" id="nom" name="nom" maxlength="30" placeholder="Votre nom" required>
+              </div>
+            </div>
+            <div class="inscription_row">
+              <div class="inscription_col-25">
+                <label for="nom">Âge&nbsp;:</label>
+              </div>
+              <div class="inscription_col-75">
+                <input type="text" id="age" name="age" maxlength="2" pattern="[1-9][0-9]?" title="entre 1 et 99" placeholder="Votre âge" required>
+              </div>
+            </div>
+            <div class="inscription_row">
+              <div class="inscription_col-25">
+                <label for="genre">Genre&nbsp;:</label>
+              </div>
+              <div class="inscription_col-75">
+                <select id="genre" name="genre">
+                  <option value="homme">Homme</option>
+                  <option value="femme">Femme</option>
+                  <option value="autre">autre</option>
+                </select>
+              </div>
+            </div>
+            <div class="inscription_row">
+              <div class="inscription_col-25">
+                <label for="email">Email&nbsp;:</label>
+              </div>
+              <div class="inscription_col-75">
+                <input type="text" id="email" name="email" placeholder="Votre email" required>
+              </div>
+            </div>
+            <div class="rowI">
+              <label>
+                <input type="checkbox" checked name="abonne"> Recevoir des informations quotidiennes
+              </label>
+            </div>
+          </fieldset>
+		  
+          <fieldset>
+            <legend>Informations complémentaire</legend>
+            <div class="inscription_row">
+              <div class="inscription_col-25">
+                <label for="sujet">Votre expérience sur les jdr&nbsp;:</label>
+              </div>
+              <div class="inscription_col-75">
+                <div class="slide_container">
+                  <input type="range" min="1" max="5" value="3" class="slider" id="range" name="niveau">
+                </div>
+              </div>
+            </div>
+            <div class="inscription_row">
+              <div class="inscription_col-25">
+                <label for="pip-boy">Votre Pip-boy préféré&nbsp;:</label>
+              </div>
+              <div class="inscription_col-75">
+                <select id="pip-boy" name="pip-boy" size="1">
+                  <optgroup label="Fallout 1 et 2">
+                    <option value="pipv2">Pip-boy 2000</option>
+                  </optgroup>
+                  <optgroup label="Fallout 76">
+                    <option value="pipv2mkVI">Pip-boy 2000 Mark VI</option>
+                  </optgroup>
+                  <optgroup label="Fallout 3 et New Vegas">
+                    <option value="pipv3">Pip-boy 3000</option>
+                  </optgroup>
+                  <optgroup label="Fallout 4">
+                    <option value="pipv3mkIV">Pip-boy 3000 Mark IV</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="inscription_row">
+              <div class="inscription_col-25">
+                <label for="sujet">Commentaire&nbsp;:</label>
+              </div>
+              <div class="inscription_col-75">
+                <textarea id="sujet" name="sujet" placeholder="Ecrivez nous, n'hésitez pas !"></textarea>
+              </div>
+            </div>
+          </fieldset>
+		  
+          <div class="inscription_row">
+            <input type="submit" value="Envoyer">
+          </div>
+		  
+        </form>
+      </div>
+    </main>
+
+
+    <footer>
+      <h2 class="titre_footer">Copyright &#169; 2020, HGCorporation</h2>
+      <p>Rejoignez nous sur&nbsp;:</p>
+      <div class="social">
+        <a href="https://www.facebook.com/bethesda.anz/" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i>Facebook
+        </a>
+        <a href="https://twitter.com/bethesda?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i>Twitter
+        </a>
+      </div>
+    </footer>
+
+
+  </body>
+
+</html>

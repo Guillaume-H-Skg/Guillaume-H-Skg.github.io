@@ -1,0 +1,54 @@
+main {
+  text-align: center;
+  color: white;
+  background-image: url('../image/prochainement.jpg');
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.titre_h2_pro {
+  font-size: 6em;
+  font-weight: normal;
+  font-family: Overseer;
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 4px #000000;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+
+.para_pro {
+  font-size: 4em;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: monofonto;
+  border-radius: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+  .titre_h2_pro {
+    font-size: 4em;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 4px #000000;
+    border: none;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .titre_h2_pro {
+    font-size: 2em;
+    color: white;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 4px #000000;
+    border: none;
+  }
+
+}

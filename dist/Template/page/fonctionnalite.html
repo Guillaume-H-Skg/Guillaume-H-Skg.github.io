@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <title>Pip-boy | Fonctionnalités</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/globale_style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../css/fonctionnalite_style.css" type="text/css" media="screen" />
+    <link rel="icon" type="image/png" href="../image/pip_boy_onglet.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <header>
+      <h1>PIP-BOY</h1>
+      <p>L'un des meilleurs inventaires, maintenant en ligne</p>
+    </header>
+
+    <nav>
+      <a id="logo" href="../index.html"><img class="nav_img" src="../image/pip_boy_onglet.png" alt="Logo de la Navbar"></a>
+      <a href="fonctionnalite.html" class="active"><i class="fa fa-list">&nbsp;</i>Fonctionnalités</a>
+      <a href="histoire.html"><i class="fa fa-book">&nbsp;</i>Histoire</a>
+      <a href="inscription.html" class="right"><i class="fa fa-envelope">&nbsp;</i>Inscription</a>
+    </nav>
+	
+	<main>
+	
+      <h2>Les fonctionnalités</h2>
+      <div id="transi" class="fonctionnalite_transi_box">
+        <p>Défiler vers le bas&nbsp;!</p>
+        <img id="fonctionnalite_transi_vaultboy" src="../image/fonctionnalite_transi.gif" alt="Vault boy sur une bombe">
+      </div>
+	  
+	  <!-- Section Aperçu  -->
+      <section id="FS1" class="fonctionnalite_section">
+        <div class="fonctionnalite_row">
+          <div class="fonctionnalite_col-66">
+            <h3>Aperçu</h3>
+            <h4>Pourquoi cette interface&nbsp;?</h4>
+            <p class="justify">L'idée derrière cette interface était de regrouper les principales informations nécessaires
+              au bon déroulement d'une partie de jeu de rôle en ligne. Ces informations vont du nombre de munitions,
+              à l'équipement ainsi qu'aux statistiques du personnage. Le Pip-boy est donc l'interface la plus adaptée,
+              c'est pour cela que nous essayons actuellement de le transcrire en page web.</p>
+          </div>
+          <div class="fonctionnalite_col-33">
+            <img class="fonctionnalite_img_droite" src="../image/fonctionnalite_aperçu.jpg" alt="Aperçu d'un Pip-boy">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Contexte  -->
+      <section id="FS2" class="fonctionnalite_section" style="background-color:#f1f1f1">
+        <div class="fonctionnalite_row">
+          <div class="fonctionnalite_col-33">
+            <img class="fonctionnalite_img_gauche" src="../image/fonctionnalite_roll20.png" alt="Logo du logiciel Roll20">
+          </div>
+          <div class="fonctionnalite_col-66">
+            <h3>Contexte</h3>
+            <h4>Utilisation pour le jeu de rôle</h4>
+            <p class="justify">Outre la satisfaction de reproduire les fonctionnalités de cet objet mythique en page web. Il devient
+              extrêmement ergonomique lors d'une partie de jeu de rôle en ligne. La plupart du temps les rôlistes utilisent Roll20,
+              un logiciel de création de carte afin de représenter la position des joueurs lors d'une partie. Et en complément à cela
+              un serveur Discord afin de gérer les inventaires, cependant ce dernier n'est pas très pratique.
+              Le Pip-boy permet donc de règler ce problème.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Conception  -->
+      <section id="FS3" class="fonctionnalite_section">
+        <div class="fonctionnalite_row">
+          <div class="fonctionnalite_col-66">
+            <h3>Conception</h3>
+            <h4>Les principales inspirations&nbsp;?</h4>
+            <p class="justify">L'idée de reprendre ce design pour l'inventaire en ligne vient tout simplement du fait que le Pip-boy de
+              l'univers Fallout est l'un des inventaires les mieux intégrés au gameplay et le plus immersif. Cet objet n'est rien d'autre
+              qu'une montre du futur vous indiquant toutes sortes d'informations. Il est donc facile à intégrer dans un scénario et crédible
+              d'un point de vue technique.
+            </p>
+          </div>
+          <div class="fonctionnalite_col-33">
+            <img class="fonctionnalite_img_droite" src="../image/fonctionnalite_inspi.gif" alt="Interface d'un Pip-boy">
+          </div>
+        </div>
+      </section>
+	  
+	  <!-- Exemples Section -->
+      <section id="FS4" class="fonctionnalite_section" style="background-color:#f1f1f1">
+        <div class="fonctionnalite_row">
+          <div class="titre_centre">
+            <h3>Exemples</h3>
+            <h4>Le <q> drag and drop </q></h4>
+            <p>Voici quelques exemples de fonctionnalités déjà intégrées dans le projet.</p>
+          </div>
+          <div class="fonctionnalite_col-50">
+            <h5>Inventaire A</h5>
+            <div class="drag_demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <p class="justify">A l'aide du <q> drag and drop </q> nous pouvons facilement faire des échanges, avoir une
+              représentaion claire des objets en notre possesion. Cette fonction est simple à appréhender et à utiliser.</p>
+          </div>
+          <div class="fonctionnalite_col-50">
+            <h5>Inventaire B</h5>
+            <div class="drag_demo" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img id="drag1" src="../image/pistol32.png" draggable="true" ondragstart="drag(event)" alt="pistolet draggable">
+              <img id="drag2" src="../image/medkit.png" draggable="true" ondragstart="drag(event)" alt="medkit draggable">
+              <img id="drag3" src="../image/MRE.png" draggable="true" ondragstart="drag(event)" alt="MRE draggable">
+            </div>
+            <p class="justify">Cependant cette technique à ses limites, la quantité d'objets reste limitée.
+              Chaque image nécessite une attention toute particulière et si par malheur vous superposez les images ces dernères
+              vont se supprimer.</p>
+          </div>
+        </div>
+        <div class="fonctionnalite_row">
+          <div class="fonctionnalite_col-100">
+            <h4>Les changements de statut</h4>
+            <div class="fonctionnalite_diapo">
+              <img class="diapo_Armure" src="../image/MediumA.png" alt="armure diapo1">
+              <img class="diapo_Armure" src="../image/LeatherA.png" alt="armure diapo2">
+              <img class="diapo_Armure" src="../image/FarmerA.png" alt="armure diapo3">
+              <img class="diapo_Armure" src="../image/ManteauA.png" alt="armure diapo4">
+              <img class="diapo_Armure" src="../image/CostumeA.png" alt="armure diapo5">
+              <button class="fa fa-chevron-left diapoB" id="diapoB_gauche" onclick="plusDivs(-1)"></button>
+              <button class="fa fa-chevron-right diapoB" id="diapoB_droite" onclick="plusDivs(1)"></button>
+            </div>
+            <p>Cette fonctionnalité permet de changer le style de notre personnage. L'idée n'est pas de représenter fidèlement
+              le personnage mais de lui attibuer une classe d'armure afin d'en déduire les statistiques.</p>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <footer>
+      <h2 class="titre_footer">Copyright &#169; 2020, HGCorporation</h2>
+      <p>Rejoignez nous sur&nbsp;:</p>
+      <div class="social">
+        <a href="https://www.facebook.com/bethesda.anz/" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i>Facebook
+        </a>
+        <a href="https://twitter.com/bethesda?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i>Twitter
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      FS1 = document.getElementById("FS1");
+      FS2 = document.getElementById("FS2");
+      FS3 = document.getElementById("FS3");
+      FS4 = document.getElementById("FS4");
+      transi = document.getElementById("transi");
+
+      var myScrollFunc = function() {
+        var y = window.scrollY;
+        if (y >= 10) {
+          transi.style.display = "none";
+        }
+        if (y >= 80) {
+          FS1.className = "fonctionnalite_section show"
+        }
+        if (y >= 800) {
+          FS2.className = "fonctionnalite_section show"
+        }
+        if (y >= 1400) {
+          FS3.className = "fonctionnalite_section show"
+        }
+        if (y >= 1800) {
+          FS4.className = "fonctionnalite_section show"
+        }
+
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+
+    </script>
+
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+
+    </script>
+
+
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("diapo_Armure");
+        if (n > x.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+
+    </script>
+
+  </body>
+
+</html>

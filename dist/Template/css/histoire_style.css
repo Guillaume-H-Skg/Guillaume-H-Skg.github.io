@@ -1,0 +1,191 @@
+main {
+  background-image: url('../image/fond_histoire.jpg');
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h2+p {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*La timeline avec la ligne vertical */
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #12c05e;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.histoire_container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  transition: all 1s;
+  opacity: 0;
+}
+
+/* Les circles sur la timeline */
+.histoire_container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #666;
+  border: 4px solid #12c05e;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+/* Place le container  pour l'animation */
+.leftH {
+  left: -1000px;
+}
+
+/* Place le container pour l'animation */
+.rightH {
+  right: 1250px;
+}
+
+/* Ajoute des flèches sur la gauche du container (pointe vers la droite) */
+.leftH::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: 3px solid #12c05e;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #12c05e;
+}
+
+/* Ajoute des flèches sur la droite du container (pointe vers la gauche) */
+.rightH::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: 3px solid #12c05e;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #12c05e transparent transparent;
+
+}
+
+/* Fixe le cercle pour les container sur le côté droit */
+.rightH::after {
+  left: -16px;
+}
+
+.histoire_content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  border: 3px solid #12c05e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.showL {
+  opacity: 1;
+  left: 0;
+  z-index: 2;
+}
+
+.showR {
+  opacity: 1;
+  right: -50%;
+  z-index: 2;
+}
+
+.histoire_col-100 {
+  width: 99.99%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.histoire_img {
+  margin: auto;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.histoire_titre {
+  margin: 5px;
+  text-align: center;
+  margin: 2px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1925px) {
+  main {
+    background-image: none;
+    background-color: #000;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .histoire_titre {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .histoire_container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .histoire_container::before {
+    left: 60px;
+    border: medium solid #12c05e;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #12c05e transparent transparent;
+  }
+
+  .leftH::after,
+  .rightH::after {
+    left: 15px;
+  }
+
+  .rightH {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .histoire_titre {
+    font-size: 2em;
+  }
+}

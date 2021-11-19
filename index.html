@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./dist/img/ico.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <script src="https://kit.fontawesome.com/9273e00d47.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./dist/js/App.js"></script>
+
+    <title>Portfolio HUMBERT Guillaume</title>
+</head>
+
+<body>
+    <nav class="main_nav">
+        <a class="current_page" href="index.html">
+            <h1 class="logo_title">PORTFOLIO</h1>
+        </a>
+
+        <ul>
+            <!-- <li><a href="index.html"><i class="fas fa-file-code fa"></i>Profil</a></li> -->
+            <li><a href="#Technology"><i class="fas fa-code fa"></i>Technologies</a></li>
+            <li><a href="#Project"><i class="fas fa-lightbulb fa"></i>Projets</a></li>
+            <li><a href="#Footer"><i class="fas fa-address-book fa"></i>Contact</a></li>
+        </ul>
+    </nav>
+    <header class="header radiant">
+        <div class="header_content">
+            <h1 class="cta_title">Guillaume HUMBERT</h1>
+            <p class="cta_catch">Agé de <strong>21 ans</strong>, passionné par l’informatique et les applications web 
+                et mobile dans leur globalité.</p>
+            <a href="#Technology" class="btn btn_cta">En savoir plus</a>
+        </div>
+    </header>
+
+    <section class="section_technology text_center ptb_3 grey" id="Technology">
+        <div class="container">
+            <h2 class="section_title">Mes Technologies</h2>
+            <p class="section_text">Voici les différentes technologies maîtrisées.</p>
+            <div>
+                <div class="technology">
+                    <div>
+                        <i class="fab fa-html5 fa-2x"></i>
+                        <p>HTML 5</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="technology">
+                    <div>
+                        <!-- <i class="fab fa-html5 fa-2x"></i> -->
+                        <i class="fab fa-css3-alt fa-2x"></i>
+                        <p>CSS 3</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="technology">
+                    <div>
+                        <i class="fab fa-less fa-2x"></i>
+                        <p>Less</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="technology">
+                    <div>
+                        <i class="fab fa-sass fa-2x"></i>
+                        <p>Sass</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+
+                <div class="technology">
+                    <div>
+                        <i class="fab fa-js-square"></i>
+                        <p>JavaScript</p3>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="technology">
+                    <div>
+                        <!-- <i class="fab fa-react fa-2x"></i> -->
+                        <i class="fab fa-angular fa-2x"></i>
+                        <p>Angular</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="technology">
+                    <div>
+                        <i class="fab fa-php fa-2x"></i>
+                        <p>PHP</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="technology">
+                    <div>
+                        <i class="fab fa-symfony"></i>
+                        <p>Symfony</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+
+                <div class="technology">
+                    <div>
+                        <i class="fab fa-node fa-2x"></i>
+                        <p>Node</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="technology">
+                    <div>
+                        <i class="fab fa-npm fa-2x"></i>
+                        <p>Npm</p3>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_projects text_center radiant" id="Project">
+        <div class="lineBG">
+        <div class="lineBG3">
+            <div class="ptb_3">
+                <h2 class="section_title">Mes Projets</h2>
+                <p class="section_text">Cette section présente les différents projets que j'ai pu réaliser et qui
+                    ne sont pas confidentiel.
+                </p>
+                <div class="container">
+                    <div class="project">
+                        <a href="#modal0" data-toggle="modal"><img src="dist/img/projetFallout1.jpg"
+                                alt="Projet Fallout"></a>
+                        <div class="project_content">
+                            <h2>Fallout</h2>
+                            <p class="project_text">Ce projet était un projet à rendre pour l'université.
+                                Le sujet était libre et nous avions 1 mois pour le réaliser. Le but 
+                                était de faire un site responsive et de respecter scrupuleusement les 
+                                standard W3C.
+                            </p>
+                            <button onclick="location.href='dist/Template/index.html'" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
+                            <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project_galery">
+                            <a href="#modal1" data-toggle="modal"><img class="project_galery_image"
+                                    src="dist/img/projetFallout2.jpg" alt="Projet Fallout"></a>
+                        </div>
+                        <div class="project_galery">
+                            <a href="#modal2" data-toggle="modal"><img class="project_galery_image"
+                                    src="dist/img/projetFallout3.jpg" alt="Projet Fallout"></a>
+                        </div>
+                        <div class="project_galery">
+                            <a href="#modal3" data-toggle="modal"><img class="project_galery_image"
+                                    src="dist/img/projetFallout4.jpg" alt="Projet Fallout"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="modal0" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/projetFallout1.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal1" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/projetFallout2.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal2" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/projetFallout3.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal3" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/projetFallout4.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section_projects text_center ptb_3 grey">
+        <h2 class="section_title">Mes Projets</h2>
+        <p class="section_text">Ce projet est un projet personnel qui avait pour but de faire un inventaire sous forme de site web.</p>
+        <div class="container">
+            <div class="project">
+                <div class="project_content">
+                    <h2>Pip-Boy</h2>
+                    <p class="project_text">L'idée derrière ce projet était de réaliser un inventaire 
+                        ressemblant fortement au Pip-boy de la franchise fallout. Le but est de l'utiliser 
+                        comme un inventaire durant des parties de jeux de rôle entre amis. Ce système permet de drag and drop
+                        les images représentant les objets du jeux et de plus facilement se souvenir du nombre d'objet transporté.
+                        Les informations sont stockées dans le local storage du navigateur. Les objets 
+                    </p>
+                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
+                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
+                </div>
+                <a href="#modal4" data-toggle="modal"><img src="dist/img/projetPipBoy1.jpg" alt="Projet Fallout"></a>
+            </div>
+            <div class="project">
+                <div class="project_galery">
+                    <a href="#modal5" data-toggle="modal"><img class="project_galery_image"
+                            src="dist/img/projetPipBoy2.jpg" alt="Projet Fallout"></a>
+                </div>
+                <div class="project_galery">
+                    <a href="#modal6" data-toggle="modal"><img class="project_galery_image"
+                            src="dist/img/projetPipBoy3.jpg" alt="Projet Fallout"></a>
+                </div>
+                <div class="project_galery">
+                    <a href="#modal7" data-toggle="modal"><img class="project_galery_image"
+                            src="dist/img/projetPipBoy4.jpg" alt="Projet Fallout"></a>
+                </div>
+            </div>
+        </div>
+        <div id="modal4" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/projetPipBoy1.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal5" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/projetPipBoy2.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal6" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/projetPipBoy3.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal7" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/projetPipBoy4.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section_projects text_center radiant">
+        <div class="lineBG">
+        <div class="lineBG2">
+            <div class="ptb_3">
+                <h2 class="section_title">Digital Painting</h2>
+                <p class="section_text">Quelques une de mes créations sur Photoshop.</p>
+                <div class="container">
+                    <div class="project">
+                        <div class="project_galery">
+                            <a href="#modal8" data-toggle="modal"><img class="project_galery_image"
+                                    src="dist/img/digitalP1.png" alt="Projet Fallout"></a>
+                            <button href="#modal8" data-toggle="modal" class="btn btn_project_section"><i class="fas fa-expand"></i>Plein écran</button>
+                        </div>
+                        <div class="project_galery">
+                            <a href="#modal9" data-toggle="modal"><img class="project_galery_image"
+                                    src="dist/img/digitalP2.png" alt="Projet Fallout"></a>
+                            <button href="#modal9" data-toggle="modal" class="btn btn_project_section"><i class="fas fa-expand"></i>Plein écran</button>
+                        </div>
+                        <div class="project_galery">
+                            <a href="#modal10" data-toggle="modal"><img class="project_galery_image"
+                                    src="dist/img/digitalP3.jpg" alt="Projet Fallout"></a>
+                            <button href="#modal10" data-toggle="modal" class="btn btn_project_section"><i class="fas fa-expand"></i>Plein écran</button>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="modal8" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/digitalP1.png" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal9" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/digitalP2.png" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal10" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Aperçu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="dist/img/digitalP3.jpg" alt="Projet Fallout">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="main_footer ptb_3" id="Footer">
+        <div class="footer_content text_center">
+            <p>Copyright &copy; 2021 HUMBERT Guillaume. Tous droits réservés.</p>
+            <div class="container">
+                <div>
+                    <div class="links_footer">
+                        <a href="https://github.com/Guillaume-H-Skg"><i class="fab fa-github-square fa-3x"></i>
+                            <p>Github</p>
+                        </a>
+                    </div>
+                    <div class="links_footer">
+                        <a href="mailto:humbertguillaume7@gmail.com"><i class="fas fa-envelope fa-3x"></i>
+                            <p>Mail</p>
+                        </a>
+                    </div>
+                    <!-- <div class="links_footer">
+                        <a href="https://bio.link/guillaumehskg"><i class="fas fa-external-link-square-alt fa-3x"></i>
+                            <p>Liens</p>
+                        </a>
+                    </div> -->
+
+                    <div class="links_footer">
+                        <a href="http://www.linkedin.com/in/guillaume-humbert-36931a226"><i class="fab fa-linkedin fa-3x"></i>
+                            <p>Linkedin</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
