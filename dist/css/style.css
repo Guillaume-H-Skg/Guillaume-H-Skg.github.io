@@ -357,7 +357,8 @@ h1, h2, h3, h4 {
 
 @media (max-width: 650px) {
   .main_nav li {
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    font-size: 0.8rem; }
   .header {
     height: 100%; }
     .header .header_content {
