@@ -22,7 +22,7 @@ body {
 
 /* Titre avec image "Parallax" */
 header {
-  padding: 8%;
+  padding: 6%;
   text-align: center;
   color: white;
   background-image: url('../image/fond_header.jpg');
