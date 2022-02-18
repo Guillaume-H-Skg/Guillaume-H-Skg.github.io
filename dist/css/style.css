@@ -248,7 +248,9 @@ h1, h2, h3, h4 {
     padding-right: 0.3rem; }
   .section_projects .project .project_text {
     margin: 0.7rem 0.7rem;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem; 
+    text-align: justify;
+    text-align-last:center;}
 
 .section_projects .project + .project {
   padding: 0; }
