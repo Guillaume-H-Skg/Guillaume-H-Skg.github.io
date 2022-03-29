@@ -231,7 +231,7 @@ h1, h2, h3, h4 {
       width: 95%;
       box-shadow: 2px 2px 10px 2px black; }
   .section_projects .project .project_content {
-    padding: 2rem 0rem;
+    padding: 2rem;
     max-width: 60%; }
   .section_projects .project .project_galery {
     max-width: 680px;
