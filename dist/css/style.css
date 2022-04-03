@@ -315,11 +315,14 @@ h1, h2, h3, h4 {
   .section_projects .project {
     display: block; }
     .section_projects .project .project_content {
-      max-width: none; }
+      max-width: none; 
+      padding: 2rem 0; }
     .section_projects .project .project_galery {
       width: 100%;
       margin: auto;
       margin-bottom: 4rem; }
+    .section_projects .project .project_text {
+      margin: 0.7rem 0.2rem; }
   .lineBG2 {
     background: no-repeat;
     background-image: url("../img/courbeBg.png");
