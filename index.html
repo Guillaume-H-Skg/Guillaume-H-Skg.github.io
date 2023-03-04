@@ -13,8 +13,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="./dist/js/App.js"></script>
-
+    <!-- <script src="./dist/js/App.js"></script> -->
+    <script src="./dist/js/Feature.js" defer></script>
+    
     <title>Portfolio HUMBERT Guillaume</title>
 </head>
 <body>
@@ -35,12 +36,13 @@
             <source src="dist/img/headerBg2.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
-        <div class="header_content">
+        <div class="header_content" >
             <h1 class="cta_title">Guillaume HUMBERT</h1>
             <p class="cta_catch">Agé de <strong>22 ans</strong>, passionné par l’informatique et les applications web et mobile dans leur globalité.</p>
-            <a href="#Technology" class="btn btn_cta">En savoir plus</a>
+            <a id="targetScroll" href="#Technology" class="btn btn_cta">En savoir plus</a>
         </div>
     </header>
+    <main>
     <section class="section_technology text_center ptb_3 grey" id="Technology">
         <div class="container">
             <h2 class="section_title">Technologies</h2>
@@ -119,20 +121,13 @@
                 </div>
                 <div class="technology">
                     <div>
-                        <i class="fab fa-node fa-2x"></i>
-                        <p>Node</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology">
-                    <div>
                         <i class="fab fa-npm fa-2x"></i>
                         <p>Npm</p3>
                             <!-- <p>Lorem ipsum dolor sit amet.</p> -->
                     </div>
                 </div>
             </div>
-            <h2 class="section_title">Compétences</h2>
+            <h2 class="section_title mt_5">Compétences</h2>
             <p class="section_text">Voici les différents logiciels et outils <strong>maîtrisés</strong>.</p>
             <div>
                 <div class="technology">
@@ -159,23 +154,25 @@
             </div>
         </div>
     </section>
-    <section class="section_projects text_center radiant" id="Project">
+    <section class="section_projects radiant" id="Project">
         <div class="lineBG">
             <div class="lineBG3">
-                <div class="ptb_3">
-                    <h2 class="section_title">Premier projet web</h2>
-                    <p class="section_text">Cette section présente les différents projets que j'ai pu réaliser et qui ne sont pas confidentiels.
+                <div class="ptb_3 ptbot_6">
+                    <h2 class="section_title text_center">Premier projet web</h2>
+                    <p class="section_text text_center">Cette section présente les différents projets que j'ai pu réaliser et qui ne sont pas confidentiels.
                     </p>
                     <div class="container">
                         <div class="project">
-                            <a href="#modal0" data-toggle="modal"><img src="dist/img/projetFallout1.jpg"
+                            <div class="img_container">
+                                <a href="#modal0" data-toggle="modal"><img src="dist/img/projetFallout1.jpg" height="auto" width="400px"
                                     alt="Projet Fallout"></a>
+                            </div>
                             <div class="project_content">
                                 <h2>Fallout</h2>
                                 <p class="project_text">Ce projet était un projet à rendre pour l'université.
                                     Le sujet était libre et nous avions un mois pour le réaliser. Le but
                                     était de faire un site responsive et de respecter scrupuleusement les
-                                    standards <strong>W3C</strong> .
+                                    standards <strong>W3C</strong>.
                                 </p>
                                 <button onclick="location.href='dist/Template/index.html'"
                                     class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
@@ -266,9 +263,9 @@
             </div>
         </div>
     </section>
-    <section class="section_projects text_center ptb_3 grey">
-        <h2 class="section_title">Projet personnel</h2>
-        <p class="section_text">Ce projet est un projet personnel qui avait pour but de faire un inventaire de jeu vidéo sous forme de site web.</p>
+    <section class="section_projects ptb_3 grey">
+        <h2 class="section_title text_center">Projet personnel</h2>
+        <p class="section_text text_center">Ce projet est un projet personnel qui avait pour but de faire un inventaire de jeu vidéo sous forme de site web.</p>
         <div class="container">
             <div class="project">
                 <div class="project_content">
@@ -281,7 +278,9 @@
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
                 </div>
-                <a href="#modal4" data-toggle="modal"><img src="dist/img/projetPipBoy1.jpg" alt="Projet Pip-Boy"></a>
+                <div class="img_container">
+                    <a href="#modal4" data-toggle="modal"><img src="dist/img/projetPipBoy1.jpg" alt="Projet Pip-Boy" height="auto" width="400px"></a>
+                </div>
             </div>
             <div class="project">
                 <div class="project_galery">
@@ -364,19 +363,21 @@
         </div>
 
     </section>
-    <section class="section_projects text_center radiant" id="angular">
+    <section class="section_projects radiant" id="angular">
         <div class="lineBG">
             <div class="lineBG2">
                 <div class="lineBG3">
-                    <div class="ptb_3">
-                        <h2 class="section_title">IUT - Projet <i class="fab fa-angular fa-1x"></i></h2>
-                        <p class="section_text">
+                    <div class="ptb_3 ptbot_6">
+                        <h2 class="section_title_colorBg text_center">IUT - Projet <i class="fab fa-angular fa-1x"></i></h2>
+                        <p class="section_text text_center">
                             Ce projet est un projet réalisé durant ma licence professionnelle, l'objectif principal était de découvrir <strong>Angular 12</strong>.
                         </p>
                         <div class="container">
                             <div class="project">
-                                <a href="#modal8" data-toggle="modal"><img src="dist/img/projetAngular/angular1.JPG"
-                                        alt="Projet Angular"></a>
+                                <div class="img_container">
+                                    <a href="#modal8" data-toggle="modal"><img src="dist/img/projetAngular/angular1.JPG"
+                                            alt="Projet Angular" height="auto" width="400px"></a>
+                                </div>
                                 <div class="project_content">
                                     <h2>WarMuseum - Angular 12</h2>
                                     <p class="project_text">
@@ -473,9 +474,9 @@
         </div>
 
     </section>
-    <section class="section_projects text_center ptb_3 grey">
-        <h2 class="section_title">IUT - Projet</h2>
-        <p class="section_text">
+    <section class="section_projects ptb_3 grey">
+        <h2 class="section_title text_center">IUT - Projet</h2>
+        <p class="section_text text_center">
             Ce projet est un projet réalisé durant ma licence professionnelle, le but principal était de découvrir <strong>Ionic</strong>.
         </p>
         <div class="container">
@@ -489,8 +490,10 @@
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
                 </div>
-                <a href="#modal12" data-toggle="modal"><img src="dist/img/projetIonic/Ionic1.jpg"
-                        alt="Projet Ionic"></a>
+                <div class="img_container">
+                    <a href="#modal12" data-toggle="modal"><img src="dist/img/projetIonic/Ionic1.jpg"
+                        alt="Projet Ionic" height="auto" width="400px"></a>
+                </div>
             </div>
             <div class="project">
                 <div class="project_galery">
@@ -572,19 +575,20 @@
             </div>
         </div>
     </section>
-    <section class="section_projects text_center radiant">
+    <section class="section_projects radiant">
         <div class="lineBG">
             <div class="lineBG2">
                 <div class="lineBG3">
-                    <div class="ptb_3">
-                        <h2 class="section_title">IUT - Projet <i class="fab fa-react fa-1x"></i></h2>
-                        <p class="section_text">
+                    <div class="ptb_3 ptbot_6">
+                        <h2 class="section_title_colorBg text_center">IUT - Projet <i class="fab fa-react fa-1x"></i></h2>
+                        <p class="section_text text_center">
                             Ce projet est un projet réalisé durant ma licence professionnelle, le principe était de découvrir <strong>React</strong>.
                         </p>
                         <div class="container">
                             <div class="project">
-                                <a href="#modal16" data-toggle="modal"><img src="dist/img/projetReact/TrelloReact1.JPG"
-                                        alt="Projet React"></a>
+                                <div class="img_container">
+                                    <a href="#modal16" data-toggle="modal"><img src="dist/img/projetReact/TrelloReact1.JPG" alt="Projet React" height="auto" width="400px"></a>
+                                </div>
                                 <div class="project_content">
                                     <h2>To Do list - React</h2>
                                     <p class="project_text">
@@ -680,9 +684,9 @@
             </div>
         </div>
     </section>
-    <section class="section_projects text_center ptb_3 grey">
-        <h2 class="section_title">IUT - Projet Tutoré</h2>
-        <p class="section_text">
+    <section class="section_projects ptb_3 grey">
+        <h2 class="section_title text_center">IUT - Projet Tutoré</h2>
+        <p class="section_text text_center">
             Ce projet est un projet réalisé en duo durant ma licence professionnelle, le but était de réaliser un <strong>CRUD</strong> complet en <strong>PHP</strong> afin de gérer des utilisateurs et des questions puis de réaliser un quiz multijoueur en utilisant les <strong>websocket</strong>. 
         </p>
         <div class="container">
@@ -695,7 +699,9 @@
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
                 </div>
-                <a href="#modal20" data-toggle="modal"><img src="dist/img/projetTut/ph.jpg" alt="Projet Tutore"></a>
+                <div class="img_container">
+                    <a href="#modal20" data-toggle="modal"><img src="dist/img/projetTut/ph.jpg" height="auto" width="400px" alt="Projet Tutore"></a>
+                </div>
             </div>
             <p class="project_text">
                 Lorsque l'utilisateur est connecté, il peut <strong>créer une partie</strong>. Il attribue une couleur à chaque joueur et saisit leurs pseudonymes à l'aide de <strong>l'autocompletion</strong> (les autres joueurs doivent aussi avoir un compte sur la plateforme). 
@@ -883,19 +889,21 @@
             </div>
         </div>
     </section>
-    <section class="section_projects text_center radiant">
+    <section class="section_projects radiant">
         <div class="lineBG">
             <div class="lineBG2">
                 <div class="lineBG3">
-                    <div class="ptb_3">
-                        <h2 class="section_title">IUT - Projet <i class="fab fa-react fa-1x"></i></h2>
-                        <p class="section_text">
+                    <div class="ptb_3 ptbot_6">
+                        <h2 class="section_title_colorBg text_center">IUT - Projet <i class="fab fa-react fa-1x"></i></h2>
+                        <p class="section_text text_center">
                             Ce projet est un projet réalisé durant ma licence professionnelle, le principe était de refaire une version simplifié de Netflix en <strong>React</strong>.
                         </p>
                         <div class="container">
                             <div class="project">
-                                <a href="#modal31" data-toggle="modal"><img src="dist/img/projetNetflix/Netflix1.JPG"
-                                        alt="Projet Netflix"></a>
+                                <div class="img_container">
+                                    <a href="#modal31" data-toggle="modal"><img src="dist/img/projetNetflix/Netflix1.JPG"
+                                        alt="Projet Netflix" height="auto" width="400px"></a>
+                                </div>
                                 <div class="project_content">
                                     <h2>Netflix - React</h2>
                                     <p class="project_text">
@@ -990,9 +998,9 @@
             </div>
         </div>
     </section>
-    <section class="section_projects text_center ptb_3 grey">
-        <h2 class="section_title">IUT - Projet <i class="fab fa-symfony"></i></h2>
-        <p class="section_text">
+    <section class="section_projects ptb_3 grey">
+        <h2 class="section_title text_center">IUT - Projet <i class="fab fa-symfony"></i></h2>
+        <p class="section_text text_center">
             Ce projet a été réalisé durant ma licence professionnelle, le principal objectif était de découvrir <strong>Symfony</strong>.
         </p>
         <div class="container">
@@ -1006,8 +1014,10 @@
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
                 </div>
-                <a href="#modal41" data-toggle="modal"><img src="dist/img/projetProcost/Procost1.JPG"
-                        alt="Projet Procost"></a>
+                <div class="img_container">
+                    <a href="#modal41" data-toggle="modal"><img src="dist/img/projetProcost/Procost1.JPG"
+                        alt="Projet Procost" height="auto" width="400px"></a>
+                </div>
             </div>
             <div class="project">
                 <div class="project_galery">
@@ -1089,19 +1099,21 @@
             </div>
         </div>
     </section>
-    <section class="section_projects text_center radiant">
+    <section class="section_projects radiant">
         <div class="lineBG">
             <div class="lineBG2">
                 <div class="lineBG3">
-                    <div class="ptb_3">
-                        <h2 class="section_title">IUT - Projet</h2>
-                        <p class="section_text">
+                    <div class="ptb_3 ptbot_6">
+                        <h2 class="section_title_colorBg text_center">IUT - Projet</h2>
+                        <p class="section_text text_center">
                             Ce projet est un projet réalisé durant ma licence professionnelle, le principe était de découvrir <strong>Flutter</strong>.
                         </p>
                         <div class="container">
                             <div class="project">
-                                <a href="#modal51" data-toggle="modal"><img src="dist/img/projetFlutter/Reminder1.jpg"
-                                        alt="Projet Flutter"></a>
+                                <div class="img_container">
+                                    <a href="#modal51" data-toggle="modal"><img src="dist/img/projetFlutter/Reminder1.jpg"
+                                        alt="Projet Flutter" height="auto" width="400px"></a>
+                                </div>
                                 <div class="project_content">
                                     <h2>Reminder - Flutter</h2>
                                     <p class="project_text">
@@ -1198,9 +1210,9 @@
             </div>
         </div>
     </section>
-    <section class="section_projects text_center ptb_3 grey">
-        <h2 class="section_title">IUT - Projet Tutore</h2>
-        <p class="section_text">
+    <section class="section_projects ptb_3 grey">
+        <h2 class="section_title text_center">IUT - Projet Tutore</h2>
+        <p class="section_text text_center">
             Ce projet est un projet réalisé durant ma licence professionnelle, le but principal était de délivrer une application <strong>multisupport</strong>.
         </p>
         <div class="container">
@@ -1215,8 +1227,10 @@
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
                     <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
                 </div>
-                <a href="#modal61" data-toggle="modal"><img src="dist/img/projetElectron/electron1.JPG"
-                        alt="Projet Electron"></a>
+                <div class="img_container">
+                    <a href="#modal61" data-toggle="modal"><img src="dist/img/projetElectron/electron1.JPG"
+                        alt="Projet Electron" height="auto" width="400px"></a>
+                </div>
             </div>
             <div class="project">
                 <div class="project_galery">
@@ -1298,27 +1312,27 @@
             </div>
         </div>
     </section>
-    <section id="Painting" class="section_projects text_center radiant">
+    <section id="Painting" class="section_projects radiant">
         <div class="lineBG">
             <div class="lineBG2">
                 <div class="ptb_3">
-                    <h2 class="section_title">Digital Painting</h2>
-                    <p class="section_text">Quelques unes de mes créations sur Photoshop.</p>
+                    <h2 class="section_title_colorBg text_center">Digital Painting</h2>
+                    <p class="section_text text_center">Quelques unes de mes créations sur Photoshop.</p>
                     <div class="container">
                         <div class="project">
-                            <div class="project_galery">
+                            <div class="project_galery text_center">
                                 <a href="#modal100" data-toggle="modal"><img class="project_galery_image"
                                         src="dist/img/digitalP1.png" alt="Projet Painting"></a>
                                 <button href="#modal100" data-toggle="modal" class="btn btn_project_section"><i
                                         class="fas fa-expand"></i>Plein écran</button>
                             </div>
-                            <div class="project_galery">
+                            <div class="project_galery text_center">
                                 <a href="#modal101" data-toggle="modal"><img class="project_galery_image"
                                         src="dist/img/digitalP2.png" alt="Projet Painting"></a>
                                 <button href="#modal101" data-toggle="modal" class="btn btn_project_section"><i
                                         class="fas fa-expand"></i>Plein écran</button>
                             </div>
-                            <div class="project_galery">
+                            <div class="project_galery text_center">
                                 <a href="#modal102" data-toggle="modal"><img class="project_galery_image"
                                         src="dist/img/digitalP3.jpg" alt="Projet Painting"></a>
                                 <button href="#modal102" data-toggle="modal" class="btn btn_project_section"><i
@@ -1378,6 +1392,8 @@
             </div>
         </div>
     </section>
+    </main>
+    <button class="scrollToTopBtn"><i class="fa fa-chevron-up fa-1x"></i></button>
     <footer class="main_footer ptb_3" id="Footer">
         <div class="footer_content text_center">
             <p>Copyright &copy; 2022 HUMBERT Guillaume. Tous droits réservés.</p>

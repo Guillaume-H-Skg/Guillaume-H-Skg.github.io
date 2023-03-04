@@ -19,11 +19,15 @@ a {
 ul {
   list-style-type: none; }
 
-h1, h2, h3, h4 {
-  font-weight: 500;
+h1, h2, h4 {
   text-transform: uppercase;
-  font-family: 'Robota';
-  letter-spacing: 5pt; }
+  font-family: 'Roboto', sans-serif; }
+
+h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+}
 
 .btn_cta, .btn_projects, .btn_project_section {
   padding: 0.6rem 1.6rem;
@@ -52,14 +56,39 @@ h1, h2, h3, h4 {
   padding: 0.7rem 1.4rem;
   background-color: #2c3a4e;
   color: #f4f4f4; 
-  margin: 0.15rem;}
+  margin-right: 0.15rem;}
   .btn_project_section:hover {
     color: #c2ad7e; }
+
+  .scrollToTopBtn {
+    background-color: #2c3a4e;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease }
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0) }
+  
+.changeBg {
+  background-color: #c2ad7e;}
 
 .lineBG {
   background-color: rgba(0, 0, 0, 0.3);
   background: url("../img/lineBg.png") no-repeat center center/cover, rgba(0, 0, 0, 0.3);
-  background-attachment: fixed; }
+  background-attachment: fixed; 
+  background-position: initial; }
 
 .lineBG2 {
   background: no-repeat;
@@ -74,7 +103,7 @@ h1, h2, h3, h4 {
   background-size: cover; }
 
 .radiant {
-  background: linear-gradient(-45deg, #857553 0%, #c2ad7e 50%, #ffe5aa 100%);
+  background: linear-gradient(-45deg, #857553 0%, #d2af60 50%, #ffe5aa 100%);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   background-attachment: fixed;
@@ -97,6 +126,12 @@ h1, h2, h3, h4 {
   padding-bottom: 1.5rem;
   padding-top: 0.5rem; }
 
+.section_title_colorBg {
+  font-size: 2.2rem;
+  padding-bottom: 1.5rem;
+  padding-top: 3rem; 
+}
+
 .section_text {
   font-size: 1.2rem; }
 
@@ -117,6 +152,12 @@ h1, h2, h3, h4 {
 
 .ptb_5 {
   padding: 5rem; }
+
+.ptbot_6 {
+  padding-bottom: 6rem; }
+
+.mt_5 {
+  margin-top: 5rem; }
 
 .grey {
   background-color: #f2f2f2; }
@@ -178,7 +219,7 @@ h1, h2, h3, h4 {
     padding: 5.4rem; }
     .header .header_content .cta_title {
       font-size: 4.5rem;
-      text-shadow: 0px 0px 3px #000;
+      /* text-shadow: 0px 0px 3px #000; */
       text-align: center; }
     .header .header_content .cta_catch {
       font-size: 1.2rem;
@@ -218,22 +259,28 @@ h1, h2, h3, h4 {
 
 .section_projects .project {
   margin: 2rem;
-  display: inline-flex;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
   align-content: center;
   flex-direction: row;
   align-items: center;
   padding: 1rem; }
+  .project .img_container { 
+    width: 50%; }
   .section_projects .project img {
-    max-width: 680px;
+    /* max-width: 680px;
     width: 100%;
     min-width: 420px;
     max-height: 360px;
     min-height: 180px;
+    border-radius: 10px; */
     border-radius: 10px;
+    transition: all 0.7s;
+    object-fit: contain;
+    width: 100%;
     transition: all 0.7s; }
     .section_projects .project img:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
     .section_projects .project .img_four {
       min-height: unset;}
@@ -241,7 +288,7 @@ h1, h2, h3, h4 {
     padding: 2rem;
     max-width: 60%; }
   .section_projects .project .project_galery {
-    max-width: 680px;
+    max-width: 700px;
     width: 66%;
     min-width: 270px;
     max-height: 360px;
@@ -257,18 +304,18 @@ h1, h2, h3, h4 {
   .section_projects .project .fas {
     padding-right: 0.3rem; }
   .section_projects .project .project_text {
-    margin: 0.7rem 0.7rem;
-    margin-bottom: 1.5rem; }
-
+    /* margin: 0.7rem 0.7rem;
+    margin-bottom: 1.5rem;  */
+    text-align: left;
+    max-width: 700px;
+    margin: 1.7rem auto;}
+  .section_projects .container .project_text {
+    text-align: left;}
   .container .project:nth-child(2):hover .project_galery:not(:hover) {
     filter: grayscale(100%);
     opacity: .95;}
   .container .project:nth-child(2):hover .project_galery:not(:hover)::after {
     background-color: rgba(0, 0, 0, 0.5);}
-
-  
-  
-  
 
 
 .section_projects .project + .project {
@@ -331,17 +378,41 @@ h1, h2, h3, h4 {
     padding: 1rem; }
   .ptb_5 {
     padding: 2rem; }
+
   .section_projects .project {
-    display: block; }
+    display: block;
+    text-align: center; }
     .section_projects .project .project_content {
       max-width: none; 
-      padding: 2rem 0; }
+      padding: 2rem 0;
+      text-align: center; }
     .section_projects .project .project_galery {
       width: 100%;
       margin: auto;
+      padding: 0;
       margin-bottom: 4rem; }
-    .section_projects .project .project_text {
-      margin: 0.7rem 0.2rem; }
+    .section_projects .container .project_text {
+      max-width: 700px;
+      margin: 1.7rem auto;}
+      .section_projects .project img {
+        max-width: 700px;
+        width: 100%;
+        min-width: 420px;
+        max-height: 360px;
+        min-height: 180px;
+        border-radius: 10px;
+        transition: all 0.7s;
+        object-fit: fill;
+        width: 100%;
+        transition: all 0.7s; }
+    /* .section_projects .project .project_text {
+      margin: 0.7rem 0.2rem; } */
+      .project .img_container {
+        width: 100%; text-align: center; }
+      .section_text {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: auto; }
   .lineBG2 {
     background: no-repeat;
     background-image: url("../img/courbeBg.png");
