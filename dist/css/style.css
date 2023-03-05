@@ -65,6 +65,7 @@ h1.cta_title, .cta_catch strong {
 
 .btn_project_section {
   font-family: inherit;
+  line-height: 0;
   padding: 0.9rem 1.6rem;
   background-color: #2c3a4e;
   color: #f4f4f4; 
