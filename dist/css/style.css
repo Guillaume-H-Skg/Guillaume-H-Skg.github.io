@@ -99,7 +99,7 @@ h1.cta_title, .cta_catch strong {
 
 .lineBG {
   background-color: rgba(0, 0, 0, 0.3);
-  background-image: url("../img/lineBg.png") no-repeat center center/cover;
+  background-image: url("../img/lineBg.png") no-repeat center;
   background-attachment: fixed; 
   background-position: initial; }
 
