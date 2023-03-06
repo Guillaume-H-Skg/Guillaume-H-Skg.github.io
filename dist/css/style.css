@@ -99,19 +99,19 @@ h1.cta_title, .cta_catch strong {
 
 .lineBG {
   background-color: rgba(0, 0, 0, 0.3);
-  background-image: url("../img/lineBg.png") no-repeat center;
+  background-image: url("../img/other/lineBg.webp");
   background-attachment: fixed; 
   background-position: initial; }
 
 .lineBG2 {
   background: no-repeat;
-  background-image: url("../img/courbeBg.png");
+  background-image: url("../img/other/curveBg.webp");
   background-position: initial;
   background-size: cover; }
 
 .lineBG3 {
   background: no-repeat;
-  background-image: url("../img/courbeBg2.png");
+  background-image: url("../img/other/curveBg2.webp");
   background-position: bottom;
   background-size: cover; }
 
@@ -179,10 +179,11 @@ h1.cta_title, .cta_catch strong {
 .grey {
   background-color: #f2f2f2; }
 
-.parallax {
-  background: url("../img/sandBg.png") no-repeat center center/cover;
+/* .parallax {
+  background: url("../img/sandBg.png") no-repeat;
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: top; } */
 
 .main_nav {
   display: flex;
