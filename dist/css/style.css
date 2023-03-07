@@ -83,7 +83,7 @@ h1.cta_title, .cta_catch strong {
     line-height: 48px;
     width: 48px;
     position: fixed;
-    bottom: 30px;
+    bottom: 42px;
     right: 25px;
     z-index: 100;
     opacity: 0;
@@ -101,7 +101,8 @@ h1.cta_title, .cta_catch strong {
   background-color: rgba(0, 0, 0, 0.3);
   background-image: url("../img/other/lineBg.webp");
   background-attachment: fixed; 
-  background-position: initial; }
+  background-position: center; 
+}
 
 .lineBG2 {
   background: no-repeat;
@@ -116,7 +117,7 @@ h1.cta_title, .cta_catch strong {
   background-size: cover; }
 
 .section_projects.radiant {
-  background: linear-gradient(-45deg, #857553 0%, #d2af60 50%, #ffe5aa 100%);
+  background: linear-gradient(-45deg, #513b2bed 0%, #d0ad5f 50%, #8e7845f2 100%);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
   background-attachment: fixed;
@@ -224,7 +225,8 @@ h1.cta_title, .cta_catch strong {
     width: auto;
     height: auto;
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%); }
+    transform: translateX(-50%) translateY(-50%);
+    filter: blur(3px); }
   .header .header_content {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
@@ -237,12 +239,16 @@ h1.cta_title, .cta_catch strong {
     padding: 5.4rem; }
     .header .header_content .cta_title {
       font-size: 4.5rem;
-      /* text-shadow: 0px 0px 3px #000; */
-      text-align: center; }
+      text-align: center;
+      font-weight: bolder;
+      font-family: "Roboto";
+      font-weight: bolder; }
     .header .header_content .cta_catch {
-      font-size: 1.2rem;
+      font-size: 2.2rem;
       padding: 0.6rem 0 2.2rem 0;
-      text-align: center; }
+      text-align: center;
+      color: #e1e1e1;
+      max-width: 930px; }
 
 .section_technology .technology {
   margin-top: 3rem;
@@ -386,6 +392,11 @@ h1.cta_title, .cta_catch strong {
 @media (max-width: 1250px) {
   .header .header_content .cta_title {
     font-size: 3rem; }
+  .header .header_content .cta_catch {
+    font-size: 2.2rem;
+    padding: 0.6rem 0 2.2rem 0;
+    text-align: center;
+    color: #e1e1e1; }
   .ptb_1 {
     padding: 0.2rem; }
   .ptb_2 {
