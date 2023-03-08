@@ -9,6 +9,41 @@
   scroll-behavior: smooth;
 }
 
+.hidden {
+
+  opacity: 0;
+  transition: ease-out 1s;
+  transition-delay: calc(200ms*var(--order));
+}
+
+.hiddenLeft {
+  filter: blur(3px);
+  transform: translateX(-100%);
+}
+
+.hiddenRight {
+  filter: blur(3px);
+  transform: translateX(100%);
+}
+
+
+.hiddenTop {
+  filter: blur(3px);
+  transform: translateY(-100%);
+}
+
+.play {
+  transform: translateX(0);
+  filter: blur(0);
+  opacity: 1;
+}
+
+@media(preferes-reduced-motion)  {
+    .hidden {
+      transition: none;
+    }
+}
+
 body {
   font-family: 'Comfortaa', 'Roboto'; 
   line-height: 1.5; 
@@ -450,14 +485,8 @@ h1.cta_title, .cta_catch strong {
         max-width: 700px;
         margin: auto; }
   .lineBG2 {
-    /* background: no-repeat;
-    background-image: url("../img/courbeBg.png");
-    background-position: initial; */
     background-size: contain; }
   .lineBG3 {
-    /* background: no-repeat;
-    background-image: url("../img/courbeBg2.png");
-    background-position: bottom; */
     background-size: contain; } }
 
 @media (max-width: 850px) {
