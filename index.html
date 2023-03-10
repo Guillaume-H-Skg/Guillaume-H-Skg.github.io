@@ -43,16 +43,18 @@
             Your browser does not support HTML5 video.
         </video>
         <div class="header_content" >
-            <h1 class="cta_title">Guillaume HUMBERT</h1>
-            <p class="cta_catch">Agé de <strong>22 ans</strong>, passionné par l’informatique et les applications web et mobile dans leur globalité.</p>
-            <a id="targetScroll" href="#Technology" class="btn btn_cta">En savoir plus</a>
+            <h1 class="cta_title hidden hiddenTop">Guillaume HUMBERT</h1>
+            <p class="cta_catch hidden hiddenBottom" style="--order:2;">Agé de <strong>22 ans</strong>, passionné par l’informatique et les applications web et mobile dans leur globalité.</p>
+            <div class="hidden" style="--order:6;">                
+                <a id="targetScroll" href="#Technology" class="btn btn_cta" >En savoir plus</a>
+            </div>
         </div>
     </header>
     <main>
-    <section class="section_technology text_center ptb_3 grey" id="Technology">
+    <section class="section_technology text_center ptb_5 grey SectionTimeline" id="Technology">
         <div class="container hidden">
-            <h2 class="section_title">Technologies</h2>
-            <p class="section_text">Voici les différentes technologies <strong>maîtrisées</strong>.</p>
+            <h2 class="section_title hidden hiddenBottom">Technologies</h2>
+            <p class="section_text hidden hiddenBottom">Voici les différentes technologies <strong>maîtrisées</strong>.</p>
             <div>
                 <div class="technology hidden hiddenLeft" style="--order:9;">
                     <div>
@@ -89,7 +91,7 @@
                             <!-- <p>Lorem ipsum dolor sit amet.</p> -->
                     </div>
                 </div>
-                <div class="technology hidden hiddenTop" style="--order:1;">
+                <div class="technology hidden" style="--order:1;">
                     <div>
                         <i class="fab fa-angular fa-2x"></i>
                         <p>Angular</p>
@@ -132,31 +134,64 @@
                     </div>
                 </div>
             </div>
-            <h2 class="section_title mt_5">Compétences</h2>
-            <p class="section_text">Voici les différents logiciels et outils <strong>maîtrisés</strong>.</p>
-            <div>
-                <div class="technology">
-                    <img src="dist/img/logiciel/PS.png" width="57px" alt="Photoshop">
-                </div>
-                <div class="technology">
-                    <img src="dist/img/logiciel/AI.png" width="57px" alt="Illustrator">
-                </div>
-                <div class="technology">
-                    <img src="dist/img/logiciel/Id.png" width="57px" alt="InDesign">
-                </div>
-                <div class="technology">
-                    <img src="dist/img/logiciel/MQ.png" width="57px" alt="moqups">
-                </div>
-                <div class="technology">
-                    <img src="dist/img/logiciel/VScode.png" width="57px" alt="VScode">
-                </div>
-                <div class="technology">
-                    <img src="dist/img/logiciel/PhpStorm.png" width="57px" alt="PhpStorm">
-                </div>
-                <div class="technology">
-                    <img src="dist/img/logiciel/GA.png" height="57px" alt="Google Analytics">
+            <div class="timeline">
+                <i class="fas fa-code fa hidden hiddenTop" style="--order:3;"></i>
+                <hr class="bgTimeline hidden hiddenBottom" style="--order:5;">
+                <i class="fas fa-graduation-cap fa hidden hiddenBottom" style="--order:5;"></i>
+            </div>
+            <div class="study hidden">
+                <h2 class="section_title hidden">Formation</h2>
+                <div>
+                    <p class="section_text hidden">Mon parcours en étude supérieure <strong>BAC +3</strong>.</p>
+                    <div>
+                        <div class="hidden">
+                            <i class="fas fa-award fa-2x hidden hiddenLeft"></i>
+                            <p class="study_text hidden hiddenRight">
+                                <strong>IUT - METZ</strong> Licence professionnelle <strong>Développeur Web</strong> et <strong>Mobile</strong> pour le Commerce Électronique
+                            </p>
+                        </div>
+                        <div class="hidden"> 
+                            <i class="fas fa-award fa-2x hidden hiddenLeft"></i>
+                            <p class="study_text hidden hiddenRight">
+                                <strong>BTS SNIR</strong> Brevet Technicien supérieur <strong>Système numérique</strong> option A <strong>Informatique</strong> et <strong>Réseau</strong>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="timeline">
+                <i class="fas fa-code fa hidden hiddenTop" style="--order:7;"></i>
+                <hr class="bgTimeline hidden hiddenTop" style="--order:5;">
+                <i class="fas fa-graduation-cap fa hidden hiddenTop" style="--order:2;"></i>
+            </div>
+            <div>
+                <h2 class="section_title hidden hiddenTop">Compétences</h2>
+                <p class="section_text hidden hiddenTop">Voici les différents logiciels et outils <strong>maîtrisés</strong>.</p>
+                <div>
+                    <div class="technology hidden hiddenLeft" style="--order:7;">
+                        <img src="dist/img/logiciel/PS.png" width="57px" height="57px" alt="Photoshop">
+                    </div>
+                    <div class="technology hidden hiddenLeft" style="--order:5;">
+                        <img src="dist/img/logiciel/AI.png" width="57px" height="57px" alt="Illustrator">
+                    </div>
+                    <div class="technology hidden hiddenLeft" style="--order:3;">
+                        <img src="dist/img/logiciel/Id.png" width="57px" height="57px" alt="InDesign">
+                    </div>
+                    <div class="technology hidden hiddenLeft" style="--order:1;">
+                        <img src="dist/img/logiciel/MQ.png" width="57px" height="57px" alt="moqups">
+                    </div>
+                    <div class="technology hidden hiddenRight" style="--order:3;">
+                        <img src="dist/img/logiciel/VScode.png" width="57px" height="57px" alt="VScode">
+                    </div>
+                    <div class="technology hidden hiddenRight" style="--order:5;">
+                        <img src="dist/img/logiciel/PhpStorm.png" width="57px" height="57px" alt="PhpStorm">
+                    </div>
+                    <div class="technology hidden hiddenRight" style="--order:7;">
+                        <img src="dist/img/logiciel/GA.png" width="165px" height="57px" alt="Google Analytics">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <section class="section_projects radiant" id="Project">
@@ -172,7 +207,7 @@
                                 <a href="#modal0" data-toggle="modal"><img src="dist/img/Fallout/projetFallout1.webp" height="auto" width="400px"
                                     alt="Projet Fallout"></a>
                             </div>
-                            <div class="project_content">
+                            <div class="project_content textRight">
                                 <h3>Fallout</h3>
                                 <p class="project_text">Ce projet était un projet à rendre pour l'université.
                                     Le sujet était libre et nous avions un mois pour le réaliser. Le but
@@ -273,7 +308,7 @@
         <p class="section_text text_center">Ce projet est un projet personnel qui avait pour but de faire un inventaire de jeu vidéo sous forme de site web.</p>
         <div class="container">
             <div class="project">
-                <div class="project_content">
+                <div class="project_content textLeft">
                     <h3>Pip-Boy</h3>
                     <p class="project_text">L'idée derrière ce projet était de réaliser un inventaire
                         ressemblant fortement au Pip-boy de la franchise fallout. Le but est de l'utiliser
