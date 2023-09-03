@@ -1,11 +1,11 @@
 let targetScroll = document.getElementById("targetScroll");
 let targetBg = document.getElementById("Footer");
-let targetTl = document.querySelector(".bgTimeline");
+
+// let targetTl = document.querySelector(".bgTimeline");
 
 let scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 
-let bgTimeline = document.querySelector(".SectionTimeline");
-
+let bgTimeline = document.querySelectorAll(".SectionTimeline");
 
 let rootElement = document.documentElement;
 
@@ -39,9 +39,13 @@ function scrollToTop() {
 function callbackChangeTlBackground(entries, observer) {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
-      bgTimeline.classList.remove("changeTlBg");
+      bgTimeline.forEach(element => {
+        element.classList.remove("changeTlBg");
+      });
     } else {
-      bgTimeline.classList.add("changeTlBg");
+      bgTimeline.forEach(element => {
+        element.classList.add("changeTlBg");
+      });
     }
   });
 }
@@ -60,15 +64,20 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
     
 let observerBtT = new IntersectionObserver(callbackBackToTop);
 observerBtT.observe(targetScroll);
-let observerBg = new IntersectionObserver(callbackChangeBackground);
-observerBg.observe(targetBg);
 
+let observerBg = new IntersectionObserver(callbackChangeBackground);
+// observerBg.observe(targetBg);
+
+const targetBtnToTops = document.querySelectorAll(".btnToTop");
+targetBtnToTops.forEach((el)=> observerBg.observe(el));
 
 
 
 let observerBgTl2 = new IntersectionObserver(callbackChangeTlBackground);
 // observerBgTl2.observe(targetTl);
+bgTimeline.forEach((el)=> observerBgTl2.observe(el));
 
-const hiddenElements2 = document.querySelectorAll('.bgTimeline');
-console.log(hiddenElements2)
-hiddenElements2.forEach((el)=> observerBgTl2.observe(el));
+// const hiddenElements2 = document.querySelectorAll('.SectionTimeline');
+
+
+

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio HUMBERT Guillaume, passionné par l’informatique et les applications web et mobile dans leur globalité."
+    />
+    <link rel="icon" type="image/png" href="../dist/img/ico.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/css/style.css" />
+    <link rel="stylesheet" href="../dist/css/project.css" />
+    <script
+      src="https://kit.fontawesome.com/9273e00d47.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <script defer src="../dist/js/Feature.js"></script> -->
+    <script defer src="../dist/js/Anim.js"></script>
+
+    <title>Portfolio Guillaume HUMBERT</title>
+  </head>
+  <body>
+    <nav class="main_nav">
+      <a class="current_page" href="../index.html">
+        <h1 class="logo_title">PORTFOLIO</h1>
+      </a>
+      <ul>
+        <li>
+          <a href="../index.html#AllProject"
+            ><i class="fas fa-lightbulb fa"></i>Projets</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="section_projects ptb_3 grey">
+          <h2 class="section_title text_center hidden hiddenTop">IUT - Projet Tutoré</h2>
+          <p class="section_text text_center hidden hiddenBottom">
+            Ce projet est un projet réalisé en duo durant ma licence
+            professionnelle, le but était de réaliser un
+            <strong>CRUD</strong> complet en <strong>PHP</strong> afin de gérer
+            des utilisateurs et des questions puis de réaliser un quiz
+            multijoueur en utilisant les <strong>websocket</strong>.
+          </p>
+          <div class="container">
+            <div class="project hidden">
+              <div class="project_content hidden hiddenLeft">
+                <h2>Projet Tutoré S1 2021 - 2022</h2>
+                <p class="project_text">
+                  L'objectif de ce projet était de concevoir un site où un
+                  utilisateur peut s'inscrire/se connecter à leur compte afin de
+                  créer une partie pour inviter ses amis et jouer ensemble à un
+                  quizz de culture générale. Une partie administrateur est aussi
+                  implémentée, il peut ajouter, modifier et supprimer toutes les
+                  informations relatives aux utilisateurs et aux questions.
+                </p>
+                <button disabled href="#" class="btn btn_project_section">
+                  <i class="fas fa-eye"></i>Demo
+                </button>
+                <button disabled href="#" class="btn btn_project_section">
+                  <i class="fas fa-code"></i>Github
+                </button>
+              </div>
+              <div class="img_container hidden hiddenRight">
+                <a href="#modal20" data-toggle="modal"
+                  ><img
+                    src="../dist/img/projetTut/ph.jpg"
+                    height="auto"
+                    width="400px"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+            </div>
+            <p class="project_text project_quizz hidden hiddenBottom">
+              Lorsque l'utilisateur est connecté, il peut
+              <strong>créer une partie</strong>. Il attribue une couleur à
+              chaque joueur et saisit leurs pseudonymes à l'aide de
+              <strong>l'autocompletion</strong> (les autres joueurs doivent
+              aussi avoir un compte sur la plateforme). Des invitations sont
+              donc envoyées aux joueurs par <strong>email</strong>. Une fois
+              tous les joueurs présents la partie se lance. Le but est de
+              choisir <strong>la difficulté de la question</strong>. Selon la
+              difficulté de la question le joueur devra avancer ou reculer du
+              nombre de cases correspondant à la difficulté de la question. Le
+              jeu est donc <strong>tour par tour</strong> et pour gagner il faut
+              obtenir 48 points (chaque question attribue un nombre de points
+              selon la difficulté choisie).
+            </p>
+            <div class="project hidden hiddenBottom">
+              <div class="project_galery project_galery_four">
+                <a href="#modal21" data-toggle="modal"
+                  ><img
+                    class="project_galery_image img_four"
+                    src="../dist/img/projetTut/pLu1.jpg"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+              <div class="project_galery project_galery_four">
+                <a href="#modal22" data-toggle="modal"
+                  ><img
+                    class="project_galery_image img_four"
+                    src="../dist/img/projetTut/pla1.jpg"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+              <div class="project_galery project_galery_four">
+                <a href="#modal23" data-toggle="modal"
+                  ><img
+                    class="project_galery_image img_four"
+                    src="../dist/img/projetTut/pha.jpg"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+              <div class="project_galery project_galery_four">
+                <a href="#modal24" data-toggle="modal"
+                  ><img
+                    class="project_galery_image img_four"
+                    src="../dist/img/projetTut/pfg.jpg"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+            </div>
+            <div class="project hidden hiddenBottom">
+              <div class="project_galery project_galery_four">
+                <a href="#modal25" data-toggle="modal"
+                  ><img
+                    class="project_galery_image img_four"
+                    src="../dist/img/projetTut/pgq.jpg"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+              <div class="project_galery project_galery_four">
+                <a href="#modal26" data-toggle="modal"
+                  ><img
+                    class="project_galery_image img_four"
+                    src="../dist/img/projetTut/pga.jpg"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+              <div class="project_galery project_galery_four">
+                <a href="#modal27" data-toggle="modal"
+                  ><img
+                    class="project_galery_image img_four"
+                    src="../dist/img/projetTut/p10.jpg"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+              <div class="project_galery project_galery_four">
+                <a href="#modal28" data-toggle="modal"
+                  ><img
+                    class="project_galery_image img_four"
+                    src="../dist/img/projetTut/p11.jpg"
+                    alt="Projet Tutore"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div id="modal20" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/ph.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal21" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/pLu1.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal22" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/pla1.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal23" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/pha.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal24" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/pfg.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal25" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/pgq.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal26" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/pga.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal27" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/p10.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="modal28" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-hidden="true"
+                  >
+                    &times;
+                  </button>
+                  <h4 class="modal-title">Aperçu</h4>
+                </div>
+                <div class="modal-body">
+                  <img src="../dist/img/projetTut/p11.jpg" alt="Projet Tutore" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn_project_section"
+                    type="button"
+                    data-dismiss="modal"
+                  >
+                    Fermer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="select_projet">
+          <a class="hidden hiddenLeftReduce" href="../pages/projetTut.html"
+            ><i class="fa fa-chevron-left fa-1x"></i> Projet Précédant</a
+          >
+          <a class="hidden hiddenRightReduce" href="../pages/react.html"
+            >Projet Suivant <i class="fa fa-chevron-right fa-1x"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer class="main_footer ptb_3 btnToTop" id="Footer">
+      <div class="footer_content text_center">
+        <p>Copyright &copy; 2022 HUMBERT Guillaume. Tous droits réservés.</p>
+        <div class="container">
+          <div>
+            <div class="links_footer">
+              <a href="https://github.com/Guillaume-H-Skg"
+                ><i class="fab fa-github-square fa-3x"></i>
+                <p>Github</p>
+              </a>
+            </div>
+            <div class="links_footer">
+              <a href="mailto:humbertguillaume7@gmail.com"
+                ><i class="fas fa-envelope fa-3x"></i>
+                <p>Mail</p>
+              </a>
+            </div>
+            <div class="links_footer">
+              <a href="http://www.linkedin.com/in/guillaume-humbert-36931a226"
+                ><i class="fab fa-linkedin fa-3x"></i>
+                <p>Linkedin</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

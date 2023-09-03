@@ -2,17 +2,22 @@ const observer = new IntersectionObserver((entries)=> {
     entries.forEach((entry) =>{
         if (entry.isIntersecting) {
             entry.target.classList.add('play');
-        } 
-        // else {
-        //     entry.target.classList.remove('play')
-        // }
+        } else {
+            entry.target.classList.remove('play')
+        }
     }); 
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el)=> observer.observe(el));
 
-
+// if (history.scrollRestoration) {
+//     history.scrollRestoration = 'manual';
+// } else {
+//     window.onbeforeunload = function () {
+//         window.scrollTo(0, 0);
+//     }
+// }
 
 
 

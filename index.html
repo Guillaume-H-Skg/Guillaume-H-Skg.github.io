@@ -1,1469 +1,763 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio HUMBERT Guillaume, passionné par l’informatique et les applications web et mobile dans leur globalité.">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio HUMBERT Guillaume, passionné par l’informatique et les applications web et mobile dans leur globalité."
+    />
     <link rel="icon" type="image/png" href="./dist/img/ico.png" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./dist/css/style.css">
-    <script src="https://kit.fontawesome.com/9273e00d47.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9273e00d47.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <script defer src="./dist/js/Feature.js"></script>
     <script defer src="./dist/js/Anim.js"></script>
-    
-    <title>Portfolio HUMBERT Guillaume</title>
-</head>
-<body>
+
+    <title>Portfolio Guillaume HUMBERT</title>
+  </head>
+  <body>
     <nav class="main_nav">
-        <a class="current_page" href="index.html">
-            <h1 class="logo_title">PORTFOLIO</h1>
-        </a>
-        <ul>
-            <!-- <li><a href="index.html"><i class="fas fa-file-code fa"></i>Profil</a></li> -->
-            <li><a href="#Technology"><i class="fas fa-code fa"></i>Technologies</a></li>
-            <li><a href="#Project"><i class="fas fa-lightbulb fa"></i>Projets</a></li>
-            <li><a href="#Painting"><i class="fas fa-pen"></i>Painting</a></li>
-            <li><a href="https://bio.link/guillaumehskg"><i class="fas fa-address-book fa"></i>Contact</a></li>
-        </ul>
+      <a class="current_page" href="index.html">
+        <h1 class="logo_title">PORTFOLIO</h1>
+      </a>
+      <ul>
+        <!-- <li><a href="index.html"><i class="fas fa-file-code fa"></i>Profil</a></li> -->
+        <li>
+          <a href="#Technology"><i class="fas fa-code fa"></i>Technologies</a>
+        </li>
+        <li>
+          <a href="#Project"><i class="fas fa-lightbulb fa"></i>Projets</a>
+        </li>
+        <li>
+          <a href="#Painting"><i class="fas fa-pen"></i>Painting</a>
+        </li>
+        <li>
+          <a href="https://bio.link/guillaumehskg"
+            ><i class="fas fa-address-book fa"></i>Contact</a
+          >
+        </li>
+      </ul>
     </nav>
     <header class="header">
-        <video autoplay muted loop id="myVideo" poster="dist/img/other/headerLoad.webp">
-            <source src="dist/img/headerBg2.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="header_content" >
-            <h1 class="cta_title hidden hiddenTop">Guillaume HUMBERT</h1>
-            <p class="cta_catch hidden hiddenBottom" style="--order:2;">Agé de <strong>22 ans</strong>, passionné par l’informatique et les applications web et mobile dans leur globalité.</p>
-            <div class="hidden" style="--order:6;">                
-                <a id="targetScroll" href="#Technology" class="btn btn_cta" >En savoir plus</a>
-            </div>
+      <video
+        autoplay
+        muted
+        loop
+        id="myVideo"
+        poster="dist/img/other/headerLoad.webp"
+      >
+        <source src="dist/img/headerBg2.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="header_content">
+        <div class="header_container">
+          <p class="UpTitle hidden hiddenBottom">DEVELOPPEUR WEB CREATIF</p>
+          <h1 class="cta_title hidden hiddenBottom" style="--order: 2">
+            Guillaume HUMBERT
+          </h1>
+          <p class="cta_catch hidden hiddenBottom" style="--order: 4">
+            Passionné par l’informatique et les applications web et mobile dans
+            leur globalité.
+          </p>
+          <div class="hidden hiddenBottom" style="--order: 6">
+            <a id="targetScroll" href="#Technology" class="btn btn_cta"
+              >En savoir plus</a
+            >
+          </div>
         </div>
+      </div>
     </header>
     <main>
-    <section class="section_technology text_center ptb_5 grey SectionTimeline" id="Technology">
-        <div class="container hidden">
-            <h2 class="section_title hidden hiddenBottom">Technologies</h2>
-            <p class="section_text hidden hiddenBottom">Voici les différentes technologies <strong>maîtrisées</strong>.</p>
-            <div>
-                <div class="technology hidden hiddenLeft" style="--order:9;">
-                    <div>
-                        <i class="fab fa-html5 fa-2x" ></i>
-                        <p>HTML 5</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenLeft" style="--order:7;">
-                    <div>
-                        <i class="fab fa-css3-alt fa-2x" ></i>
-                        <p>CSS 3</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenLeft" style="--order:6;">
-                    <div>
-                        <i class="fab fa-less fa-2x"></i>
-                        <p>Less</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenLeft" style="--order:5;">
-                    <div>
-                        <i class="fab fa-sass fa-2x"></i>
-                        <p>Sass</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenLeft" style="--order:3;">
-                    <div>
-                        <i class="fab fa-js-square"></i>
-                        <p>JavaScript</p3>
-                            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden" style="--order:1;">
-                    <div>
-                        <i class="fab fa-angular fa-2x"></i>
-                        <p>Angular</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenRight" style="--order:3;">
-                    <div>
-                        <i class="fab fa-react fa-2x"></i>
-                        <p>React</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenRight" style="--order:5;">
-                    <div>
-                        <i class="fab fa-php fa-2x"></i>
-                        <p>PHP</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenRight" style="--order:6;">
-                    <div>
-                        <i class="fab fa-symfony"></i>
-                        <p>Symfony</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenRight" style="--order:7;">
-                    <div>
-                        <i class="fab fa-magento"></i>
-                        <p>Magento</p>
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-                <div class="technology hidden hiddenRight" style="--order:9;">
-                    <div>
-                        <i class="fab fa-npm fa-2x"></i>
-                        <p>Npm</p3>
-                            <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="timeline">
-                <i class="fas fa-code fa hidden hiddenTop" style="--order:3;"></i>
-                <hr class="bgTimeline hidden hiddenBottom" style="--order:5;">
-                <i class="fas fa-graduation-cap fa hidden hiddenBottom" style="--order:5;"></i>
-            </div>
-            <div class="study hidden">
-                <h2 class="section_title hidden">Formation</h2>
-                <div>
-                    <p class="section_text hidden">Mon parcours en étude supérieure <strong>BAC +3</strong>.</p>
-                    <div>
-                        <div class="hidden">
-                            <i class="fas fa-award fa-2x hidden hiddenLeft"></i>
-                            <p class="study_text hidden hiddenRight">
-                                <strong>IUT - METZ</strong> Licence professionnelle <strong>Développeur Web</strong> et <strong>Mobile</strong> pour le Commerce Électronique
-                            </p>
-                        </div>
-                        <div class="hidden"> 
-                            <i class="fas fa-award fa-2x hidden hiddenLeft"></i>
-                            <p class="study_text hidden hiddenRight">
-                                <strong>BTS SNIR</strong> Brevet Technicien supérieur <strong>Système numérique</strong> option A <strong>Informatique</strong> et <strong>Réseau</strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="timeline">
-                <i class="fas fa-code fa hidden hiddenTop" style="--order:7;"></i>
-                <hr class="bgTimeline hidden hiddenTop" style="--order:5;">
-                <i class="fas fa-graduation-cap fa hidden hiddenTop" style="--order:2;"></i>
-            </div>
-            <div>
-                <h2 class="section_title hidden hiddenTop">Compétences</h2>
-                <p class="section_text hidden hiddenTop">Voici les différents logiciels et outils <strong>maîtrisés</strong>.</p>
-                <div>
-                    <div class="technology hidden hiddenLeft" style="--order:7;">
-                        <img src="dist/img/logiciel/PS.png" width="57px" height="57px" alt="Photoshop">
-                    </div>
-                    <div class="technology hidden hiddenLeft" style="--order:5;">
-                        <img src="dist/img/logiciel/AI.png" width="57px" height="57px" alt="Illustrator">
-                    </div>
-                    <div class="technology hidden hiddenLeft" style="--order:3;">
-                        <img src="dist/img/logiciel/Id.png" width="57px" height="57px" alt="InDesign">
-                    </div>
-                    <div class="technology hidden hiddenLeft" style="--order:1;">
-                        <img src="dist/img/logiciel/MQ.png" width="57px" height="57px" alt="moqups">
-                    </div>
-                    <div class="technology hidden hiddenRight" style="--order:3;">
-                        <img src="dist/img/logiciel/VScode.png" width="57px" height="57px" alt="VScode">
-                    </div>
-                    <div class="technology hidden hiddenRight" style="--order:5;">
-                        <img src="dist/img/logiciel/PhpStorm.png" width="57px" height="57px" alt="PhpStorm">
-                    </div>
-                    <div class="technology hidden hiddenRight" style="--order:7;">
-                        <img src="dist/img/logiciel/GA.png" width="165px" height="57px" alt="Google Analytics">
-                    </div>
-                </div>
-            </div>
-
+      <section
+        class="section_technology text_center ptb_5 white"
+        id="Technology"
+      >
+        <p class="UpTitle hidden hiddenBottom">COMPETENCES</p>
+        <div class="section_text_container">
+          <h2 class="hidden hiddenBottomReduce">
+            Principales<br />
+            compétences
+          </h2>
         </div>
-    </section>
-    <section class="section_projects radiant" id="Project">
-        <div class="lineBG">
-            <div class="lineBG3">
-                <div class="ptb_3 ptbot_6">
-                    <h2 class="section_title text_center">Premier projet web</h2>
-                    <p class="section_text text_center">Cette section présente les différents projets que j'ai pu réaliser et qui ne sont pas confidentiels.
-                    </p>
-                    <div class="container">
-                        <div class="project">
-                            <div class="img_container">
-                                <a href="#modal0" data-toggle="modal"><img src="dist/img/Fallout/projetFallout1.webp" height="auto" width="400px"
-                                    alt="Projet Fallout"></a>
-                            </div>
-                            <div class="project_content textRight">
-                                <h3>Fallout</h3>
-                                <p class="project_text">Ce projet était un projet à rendre pour l'université.
-                                    Le sujet était libre et nous avions un mois pour le réaliser. Le but
-                                    était de faire un site responsive et de respecter scrupuleusement les
-                                    standards <strong>W3C</strong>.
-                                </p>
-                                <button onclick="location.href='dist/Template/index.html'"
-                                    class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
-                                <button disabled href="#" class="btn btn_project_section"><i
-                                        class="fas fa-code"></i>Github</button>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="project_galery">
-                                <a href="#modal1" data-toggle="modal"><img class="project_galery_image"
-                                        src="dist/img/Fallout/projetFallout2.webp" alt="Projet Fallout"></a>
-                            </div>
-                            <div class="project_galery">
-                                <a href="#modal2" data-toggle="modal"><img class="project_galery_image"
-                                        src="dist/img/Fallout/projetFallout3.webp" alt="Projet Fallout"></a>
-                            </div>
-                            <div class="project_galery">
-                                <a href="#modal3" data-toggle="modal"><img class="project_galery_image"
-                                        src="dist/img/Fallout/projetFallout4.webp" alt="Projet Fallout"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal0" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/Fallout/projetFallout1.webp" alt="Projet Fallout">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/Fallout/projetFallout2.webp" alt="Projet Fallout">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal2" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/Fallout/projetFallout3.webp" alt="Projet Fallout">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal3" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/Fallout/projetFallout4.webp" alt="Projet Fallout">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section_projects ptb_3 grey">
-        <h2 class="section_title text_center">Projet personnel</h2>
-        <p class="section_text text_center">Ce projet est un projet personnel qui avait pour but de faire un inventaire de jeu vidéo sous forme de site web.</p>
-        <div class="container">
-            <div class="project">
-                <div class="project_content textLeft">
-                    <h3>Pip-Boy</h3>
-                    <p class="project_text">L'idée derrière ce projet était de réaliser un inventaire
-                        ressemblant fortement au Pip-boy de la franchise fallout. Le but est de l'utiliser
-                        comme un inventaire durant des parties de jeux de rôle entre amis. Ce système permet de drag and drop les images représentant les objets du jeux et de plus facilement se souvenir du nombre d'objets transportés.
-                        Les informations sont stockées dans le <strong>local storage</strong> du navigateur.
-                    </p>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
-                </div>
-                <div class="img_container">
-                    <a href="#modal4" data-toggle="modal"><img src="dist/img/Pip Boy/projetPipBoy1.webp" alt="Projet Pip-Boy" height="auto" width="400px"></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project_galery">
-                    <a href="#modal5" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/Pip Boy/projetPipBoy2.webp" alt="Projet Pip-Boy"></a>
-                </div>
-                <div class="project_galery">
-                    <a href="#modal6" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/Pip Boy/projetPipBoy3.webp" alt="Projet Pip-Boy"></a>
-                </div>
-                <div class="project_galery">
-                    <a href="#modal7" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/Pip Boy/projetPipBoy4.webp" alt="Projet Pip-Boy"></a>
-                </div>
-            </div>
-        </div>
-        <div id="modal4" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/Pip Boy/projetPipBoy1.webp" alt="Projet Pip-Boy">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal5" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/Pip Boy/projetPipBoy2.webp" alt="Projet Pip-Boy">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal6" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/Pip Boy/projetPipBoy3.webp" alt="Projet Pip-Boy">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal7" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/Pip Boy/projetPipBoy4.webp" alt="Projet Pip-Boy">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="section_projects radiant" id="angular">
-        <div class="lineBG">
-            <div class="lineBG2">
-                <div class="lineBG3">
-                    <div class="ptb_3 ptbot_6">
-                        <h2 class="section_title_colorBg text_center">IUT - Projet <i class="fab fa-angular fa-1x"></i></h2>
-                        <p class="section_text text_center">
-                            Ce projet est un projet réalisé durant ma licence professionnelle, l'objectif principal était de découvrir <strong>Angular 12</strong>.
-                        </p>
-                        <div class="container">
-                            <div class="project">
-                                <div class="img_container">
-                                    <a href="#modal8" data-toggle="modal"><img src="dist/img/projetAngular/angular1.JPG"
-                                            alt="Projet Angular" height="auto" width="400px"></a>
-                                </div>
-                                <div class="project_content">
-                                    <h2>WarMuseum - Angular 12</h2>
-                                    <p class="project_text">
-                                        Le but de ce projet était de réaliser un <strong>CRUD</strong> sur le thème de notre choix, en utilsant <strong>Angular 12</strong> ainsi que <strong>Firebase</strong> pour stocker les données. Les fonctionnalités sont les suivantes : Ajout, modification et suppresion d'un véhicule et d'un musée. L'implémentation de validators a aussi été réalisée pour la gestion des erreurs des formulaires.
-                                    </p>
-                                    <button disabled href="#" class="btn btn_project_section"><i
-                                            class="fas fa-eye"></i>Demo</button>
-                                    <button disabled href="#" class="btn btn_project_section"><i
-                                            class="fas fa-code"></i>Github</button>
-                                </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_galery">
-                                    <a href="#modal9" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetAngular/angular2.JPG" alt="Projet Angular"></a>
-                                </div>
-                                <div class="project_galery">
-                                    <a href="#modal10" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetAngular/angular3.JPG" alt="Projet Angular"></a>
-                                </div>
-                                <div class="project_galery">
-                                    <a href="#modal11" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetAngular/angular4.JPG" alt="Projet Angular"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal8" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetAngular/angular1.JPG" alt="Projet Angular">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal9" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetAngular/angular2.JPG" alt="Projet Angular">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal10" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetAngular/angular3.JPG" alt="Projet Angular">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal11" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetAngular/angular4.JPG" alt="Projet Angular">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="section_projects ptb_3 grey">
-        <h2 class="section_title text_center">IUT - Projet</h2>
-        <p class="section_text text_center">
-            Ce projet est un projet réalisé durant ma licence professionnelle, le but principal était de découvrir <strong>Ionic</strong>.
-        </p>
-        <div class="container">
-            <div class="project">
-                <div class="project_content">
-                    <h2>WarMuseum - Ionic</h2>
-                    <p class="project_text">
-                        Ce projet est l'adaptation du projet Angular <a href="#angular">ci-dessus</a> en version <strong>mobile</strong>. Il contient donc les mêmes fonctionnalités que ce dernier, cependant des fonctionnalités propres à Ionic ont été ajoutées telle que la prise de photos et la possibilité de partager des photos.
-                        Des boutons flottants ont été ajoutés pour revenir en haut ou en bas de liste. L'interface a également été réadaptée à la version <strong>mobile</strong>.
-                    </p>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
-                </div>
-                <div class="img_container">
-                    <a href="#modal12" data-toggle="modal"><img src="dist/img/projetIonic/Ionic1.jpg"
-                        alt="Projet Ionic" height="auto" width="400px"></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project_galery">
-                    <a href="#modal13" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetIonic/Ionic2.jpg" alt="Projet Ionic"></a>
-                </div>
-                <div class="project_galery">
-                    <a href="#modal14" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetIonic/Ionic3.jpg" alt="Projet Ionic"></a>
-                </div>
-                <div class="project_galery">
-                    <a href="#modal15" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetIonic/Ionic4.jpg" alt="Projet Ionic"></a>
-                </div>
-            </div>
-        </div>
-        <div id="modal12" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetIonic/Ionic1.jpg" alt="Projet Ionic">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal13" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetIonic/Ionic2.jpg" alt="Projet Ionic">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal14" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetIonic/Ionic3.jpg" alt="Projet Ionic">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal15" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetIonic/Ionic4.jpg" alt="Projet Ionic">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section_projects radiant">
-        <div class="lineBG">
-            <div class="lineBG2">
-                <div class="lineBG3">
-                    <div class="ptb_3 ptbot_6">
-                        <h2 class="section_title_colorBg text_center">IUT - Projet <i class="fab fa-react fa-1x"></i></h2>
-                        <p class="section_text text_center">
-                            Ce projet est un projet réalisé durant ma licence professionnelle, le principe était de découvrir <strong>React</strong>.
-                        </p>
-                        <div class="container">
-                            <div class="project">
-                                <div class="img_container">
-                                    <a href="#modal16" data-toggle="modal"><img src="dist/img/projetReact/TrelloReact1.webp" alt="Projet React" height="auto" width="400px"></a>
-                                </div>
-                                <div class="project_content">
-                                    <h2>To Do list - React</h2>
-                                    <p class="project_text">
-                                        Ce projet consistait à réaliser une To Do List avec <strong>React</strong> et d'utiliser les <strong>Hooks</strong> et <strong>typescript</strong>. L'application possède des similitudes avec Trello et comporte les fonctionnalités suivantes : Ajout de tâche et de liste, les tâches peuvent être modifiées et supprimées. Un filtre a aussi été mis en place afin d'afficher les tâches réalisées ou non. Les tâches peuvent aussi être déplacées d'une liste à l'autre à l'aide du <strong>drag and drop</strong>.
-                                    </p>
-                                    <button disabled href="#" class="btn btn_project_section"><i
-                                            class="fas fa-eye"></i>Demo</button>
-                                    <button disabled href="#" class="btn btn_project_section"><i
-                                            class="fas fa-code"></i>Github</button>
-                                </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_galery">
-                                    <a href="#modal17" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetReact/TrelloReact2.webp" alt="Projet React"></a>
-                                </div>
-                                <div class="project_galery">
-                                    <a href="#modal18" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetReact/TrelloReact3.webp" alt="Projet React"></a>
-                                </div>
-                                <div class="project_galery">
-                                    <a href="#modal19" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetReact/TrelloReact4.webp" alt="Projet React"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal16" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetReact/TrelloReact1.webp" alt="Projet React">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal17" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetReact/TrelloReact2.webp" alt="Projet React">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal18" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetReact/TrelloReact3.webp" alt="Projet React">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal19" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetReact/TrelloReact4.webp" alt="Projet React">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section_projects ptb_3 grey">
-        <h2 class="section_title text_center">IUT - Projet Tutoré</h2>
-        <p class="section_text text_center">
-            Ce projet est un projet réalisé en duo durant ma licence professionnelle, le but était de réaliser un <strong>CRUD</strong> complet en <strong>PHP</strong> afin de gérer des utilisateurs et des questions puis de réaliser un quiz multijoueur en utilisant les <strong>websocket</strong>. 
-        </p>
-        <div class="container">
-            <div class="project">
-                <div class="project_content">
-                    <h2>Projet Tutoré S1 2021 - 2022</h2>
-                    <p class="project_text">
-                        L'objectif de ce projet était de concevoir un site où un utilisateur peut s'inscrire/se connecter à leur compte afin de créer une partie pour inviter ses amis et jouer ensemble à un quizz de culture générale. Une partie administrateur est aussi implémentée, il peut ajouter, modifier et supprimer toutes les informations relatives aux utilisateurs et aux questions.
-                    </p>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
-                </div>
-                <div class="img_container">
-                    <a href="#modal20" data-toggle="modal"><img src="dist/img/projetTut/ph.jpg" height="auto" width="400px" alt="Projet Tutore"></a>
-                </div>
-            </div>
-            <p class="project_text">
-                Lorsque l'utilisateur est connecté, il peut <strong>créer une partie</strong>. Il attribue une couleur à chaque joueur et saisit leurs pseudonymes à l'aide de <strong>l'autocompletion</strong> (les autres joueurs doivent aussi avoir un compte sur la plateforme). 
-                Des invitations sont donc envoyées aux joueurs par <strong>email</strong>. Une fois tous les joueurs présents la partie se lance. Le but est de choisir <strong>la difficulté de la question</strong>. Selon la difficulté de la question le joueur devra avancer ou reculer du nombre de cases correspondant à la difficulté de la question. Le jeu est donc <strong>tour par tour</strong> et pour gagner il faut obtenir 48 points (chaque question attribue un nombre de points selon la difficulté choisie).
+        <div class="mainSkillCards hidden">
+          <div class="mainSkillCard hidden hiddenLeftReduce">
+            <img src="dist/img/other/UI.svg" alt="Logo représentant l'UI et l'UX" />
+            <h4>UX design / UI design</h4>
+            <p>
+              Création de maquette et d'interface, élaboration d'expérience utilisateur claire et intuitive.
             </p>
-            <div class="project">
-                <div class="project_galery project_galery_four">
-                    <a href="#modal21" data-toggle="modal"><img class="project_galery_image img_four"
-                            src="dist/img/projetTut/pLu1.jpg" alt="Projet Tutore"></a>
-                </div>
-                <div class="project_galery project_galery_four">
-                    <a href="#modal22" data-toggle="modal"><img class="project_galery_image img_four"
-                            src="dist/img/projetTut/pla1.jpg" alt="Projet Tutore"></a>
-                </div>
-                <div class="project_galery project_galery_four">
-                    <a href="#modal23" data-toggle="modal"><img class="project_galery_image img_four"
-                            src="dist/img/projetTut/pha.jpg" alt="Projet Tutore"></a>
-                </div>
-                <div class="project_galery project_galery_four">
-                    <a href="#modal24" data-toggle="modal"><img class="project_galery_image img_four"
-                            src="dist/img/projetTut/pfg.jpg" alt="Projet Tutore"></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project_galery project_galery_four">
-                    <a href="#modal25" data-toggle="modal"><img class="project_galery_image img_four"
-                            src="dist/img/projetTut/pgq.jpg" alt="Projet Tutore"></a>
-                </div>
-                <div class="project_galery project_galery_four">
-                    <a href="#modal26" data-toggle="modal"><img class="project_galery_image img_four"
-                            src="dist/img/projetTut/pga.jpg" alt="Projet Tutore"></a>
-                </div>
-                <div class="project_galery project_galery_four">
-                    <a href="#modal27" data-toggle="modal"><img class="project_galery_image img_four"
-                            src="dist/img/projetTut/p10.jpg" alt="Projet Tutore"></a>
-                </div>
-                <div class="project_galery project_galery_four">
-                    <a href="#modal28" data-toggle="modal"><img class="project_galery_image img_four"
-                            src="dist/img/projetTut/p11.jpg" alt="Projet Tutore"></a>
-                </div>
-            </div>
+          </div>
+          <div class="mainSkillCard hidden hiddenBottomReduce">
+            <img src="dist/img/other/Code.svg" alt="Logo représentant le dévoloppement web" />
+            <h4>Dévéloppement Web</h4>
+            <p>
+              Développement d'application web et mobile, forte appétence pour le front-end et ses frameworks. Expérience avec le CMS Magento et la conception de sites d'e-commerce.
+            </p>
+          </div>
+          <div class="mainSkillCard hidden hiddenRightReduce">
+            <img src="dist/img/other/SEO.svg" alt="Logo représentant le SEO" />
+            <h4>Référencement Web</h4>
+            <p>
+              Optimisation SEO et application des bonnes pratiques, stratégie de positionnement. 
+            </p>
+          </div>
         </div>
-        <div id="modal20" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/ph.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
+      </section>
+      <section class="section_projects grey technologyScroller">
+        <div class="flexRow">
+          <div class="text_container">
+            <p class="UpTitle hidden hiddenBottom">TECHNOLOGIES</p>
+            <h2 class="side_title hidden hiddenBottomReduce">
+              Technologies maîtrisées
+            </h2>
+            <p class="side_text hidden hiddenBottom">
+              Maîtrise de nombreux outils et technologies orientés vers le développement et la création.
+            </p>
+          </div>
+          <div class="side_container">
+            <div class="scroller_container">
+              <div class="img_container_techno hidden hiddenBottomReduce">
+                <img src="dist/img/technology/technologyCol1.png" alt="Nombreuses carte dévrivant les logiciels maîtrisées" />
+              </div>
+              <div class="img_container_techno hidden hiddenTopReduce">
+                <img src="dist/img/technology/technologyCol2.png" alt="Nombreuses carte dévrivant les technologies maîtrisées" />
+              </div>
             </div>
+          </div>
         </div>
-        <div id="modal21" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/pLu1.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+      </section>
+      <section class="section_projects ptb_3 white" id="Project">
+        <div class="flexRow">
+          <div class="text_container">
+            <p class="UpTitle hidden hiddenBottom">PROJET IUT</p>
+            <div class="side_title">
+              <h2 class="hidden hiddenBottomReduce">Procost</h2>
+              <div class="tech_tags hidden hiddenBottomReduce">
+                <div class="tech_tag symfony hidden hiddenBottomReduce">
+                  <div class="img_container_tag">
+                    <img
+                      src="dist/img/techIcon/symfony.png"
+                      width="24px"
+                      height="24px"
+                      alt="Logo de Symfony"
+                    />
+                  </div>
+                  <span>Symfony</span>
                 </div>
+              </div>
             </div>
+            <p class="side_text hidden hiddenBottom">
+              C'est un projet réalisé dans le cadre de ma licence professionnelle pour le développement web et mobile. Le but était d'appliquer les fondamentaux de Symfony à un dashboard.
+            </p>
+          </div>
+          <div class="side_container hidden hiddenLeftReduce">
+            <div class="img_container_project">
+              <a href="pages/procost.html">
+                <img src="dist/img/projetProcost/ProcostMockup.png" alt="Mockup d'une application de Symfony" />
+              </a>
+            </div>
+          </div>
         </div>
-        <div id="modal22" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/pla1.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+      </section>
+      <section class="section_projects ptb_3 grey section_netflix">
+        <div class="flexRow">
+          <div class="side_container hidden hiddenRightReduce">
+            <div class="img_container_project">
+              <a href="pages/react.html">
+                <img src="dist/img/projetNetflix/NetflixMockup.png" alt="Mockup d'une application de React" />
+              </a>
+            </div>
+          </div>
+          <div class="text_container">
+            <p class="UpTitle hidden hiddenBottom">PROJET IUT</p>
+            <div class="side_title">
+              <h2 class="hidden hiddenBottomReduce">Netflix</h2>
+              <div class="tech_tags hidden hiddenBottomReduce">
+                <div class="tech_tag react hidden hiddenBottomReduce">
+                  <div class="img_container_tag">
+                    <img
+                      src="dist/img/techIcon/react.png"
+                      width="24px"
+                      height="24px"
+                      alt="Logo de react"
+                    />
+                  </div>
+                  <span>React</span>
                 </div>
-            </div>
-        </div>
-        <div id="modal23" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/pha.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+                <div class="tech_tag tmdb hidden hiddenBottomReduce">
+                  <div class="img_container_tag">
+                    <img
+                      src="dist/img/techIcon/tmdb.svg"
+                      width="24px"
+                      height="24px"
+                      alt="Logo de tmdb"
+                    />
+                  </div>
+                  <span>Api TMDB</span>
                 </div>
+              </div>
             </div>
+            <p class="side_text hidden hiddenBottom">
+              C'est aussi un projet réalisé dans le cadre de ma licence professionnelle. L'objectif était de réaliser un clone de Netflix fonctionnel en utilisant React, Typescript et l'api TMDB.
+            </p>
+          </div>
         </div>
-        <div id="modal24" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/pfg.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+      </section>
+      <section class="section_projects ptb_3 SectionTimeline black btnToTop">
+        <div class="flexRow flexColumn">
+          <div class="text_container">
+            <p class="UpTitle hidden hiddenBottom">FREELANCE</p>
+            <div class="side_title hidden hiddenBottom">
+              <h2 class="hidden hiddenBottom">Portfolio</h2>
+              <div class="tech_tags hidden hiddenBottomReduce">
+                <div class="tech_tag next hidden hiddenBottomReduce">
+                  <div class="img_container_tag">
+                    <img
+                      src="dist/img/techIcon/next.png"
+                      width="24px"
+                      height="24px"
+                      alt="Logo de next"
+                    />
+                  </div>
+                  <span>Next.Js</span>
                 </div>
-            </div>
-        </div>
-        <div id="modal25" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/pgq.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+                <div class="tech_tag gsap hidden hiddenBottomReduce">
+                  <div class="img_container_tag">
+                    <img
+                      src="dist/img/techIcon/gsap.png"
+                      width="24px"
+                      height="24px"
+                      alt="Logo de gsap"
+                    />
+                  </div>
+                  <span>GSAP</span>
                 </div>
-            </div>
-        </div>
-        <div id="modal26" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/pga.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+                <div class="tech_tag three hidden hiddenBottomReduce">
+                  <div class="img_container_tag">
+                    <img
+                      src="dist/img/techIcon/threejs.png"
+                      width="24px"
+                      height="24px"
+                      alt="Logo de threejs"
+                    />
+                  </div>
+                  <span>Three.Js</span>
                 </div>
+              </div>
             </div>
-        </div>
-        <div id="modal27" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/p10.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
+            <p class="side_text hidden hiddenBottom" style="--order: 3">
+              J'ai aussi l'occassion de réaliser des portfolios pour différents clients.
+              Le but était de marquer l'esprit en mettant leurs travaux en avant tout en restant fonctionnel et facile à consulter.
+            </p>
+            <div class="btn_portfolio">
+              <div class="hidden hiddenBottom" style="--order: 6">
+                <a href="https://portfolio-three-gules-88.vercel.app/" target="blank" class="btn btn_cta ptf_1"
+                  >Découvrir</a
+                >
+              </div>
+              <div class="hidden hiddenBottom" style="--order: 6">
+                <a href="https://evanmassonnet.github.io/" target="blank" class="btn btn_cta ptf_2"
+                  >Découvrir</a
+                >
+              </div>
             </div>
-        </div>
-        <div id="modal28" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetTut/p11.jpg" alt="Projet Tutore">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
+          </div>
+          <div class="side_container hidden hiddenTopReduce">
+            <div class="img_container_project">
+              <img src="dist/img/portfolio/portfolio.png" alt="Mockups des portfolios" />
             </div>
+          </div>
         </div>
-    </section>
-    <section class="section_projects radiant">
-        <div class="lineBG">
-            <div class="lineBG2">
-                <div class="lineBG3">
-                    <div class="ptb_3 ptbot_6">
-                        <h2 class="section_title_colorBg text_center">IUT - Projet <i class="fab fa-react fa-1x"></i></h2>
-                        <p class="section_text text_center">
-                            Ce projet est un projet réalisé durant ma licence professionnelle, le principe était de refaire une version simplifié de Netflix en <strong>React</strong>.
-                        </p>
-                        <div class="container">
-                            <div class="project">
-                                <div class="img_container">
-                                    <a href="#modal31" data-toggle="modal"><img src="dist/img/projetNetflix/Netflix1.webp"
-                                        alt="Projet Netflix" height="auto" width="400px"></a>
-                                </div>
-                                <div class="project_content">
-                                    <h2>Netflix - React</h2>
-                                    <p class="project_text">
-                                        Ce projet consistait à réaliser l'interface de Netflix avec <strong>React</strong>, d'utiliser la bibilothèque <strong>MUI</strong> et faire usage de l'API <strong>TMDB</strong> en respectant <strong>typescript</strong>. Cette version comporte la homepage, la page de gestion de profil, et les listes des différents films et série. Les informations des séries et films s'affichent avec un modal, et il est aussi possible de rechercher les différents films et série.</p>
-                                    <button disabled href="#" class="btn btn_project_section"><i
-                                            class="fas fa-eye"></i>Demo</button>
-                                    <button disabled href="#" class="btn btn_project_section"><i
-                                            class="fas fa-code"></i>Github</button>
-                                </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_galery">
-                                    <a href="#modal32" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetNetflix/Netflix2.webp" alt="Projet Netflix"></a>
-                                </div>
-                                <div class="project_galery">
-                                    <a href="#modal33" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetNetflix/Netflix3.webp" alt="Projet Netflix"></a>
-                                </div>
-                                <div class="project_galery">
-                                    <a href="#modal34" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetNetflix/Netflix4.webp" alt="Projet Netflix"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </section>
+      <section class="section_projects ptb_3 grey text_center" id="AllProject">
+        <p class="UpTitle hidden hiddenBottom">PROJETS</p>
+        <div class="section_text_container">
+          <h2 class="hidden hiddenBottom">Mes autres projets</h2>
+          <p class="text_center hidden hiddenBottom">
+            Voici une liste des différents majeurs projets que j'ai pu réaliser ces dernières années.
+          </p> 
         </div>
-        <div id="modal31" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetNetflix/Netflix1.webp" alt="Projet Netflix">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal32" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetNetflix/Netflix2.webp" alt="Projet Netflix">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal33" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetNetflix/Netflix3.webp" alt="Projet Netflix">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal34" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetNetflix/Netflix4.webp" alt="Projet Netflix">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section_projects ptb_3 grey">
-        <h2 class="section_title text_center">IUT - Projet <i class="fab fa-symfony"></i></h2>
-        <p class="section_text text_center">
-            Ce projet a été réalisé durant ma licence professionnelle, le principal objectif était de découvrir <strong>Symfony</strong>.
-        </p>
         <div class="container">
-            <div class="project">
-                <div class="project_content">
-                    <h2>Procost - Symfony</h2>
-                    <p class="project_text">
-                        Ce projet m'a permis de découvrir <strong>Symfony</strong> en <strong>version 6</strong>. Avec ce site il est possible de calculer de manière sommaire les coûts de développement des projets réalisés par les équipes de production d'une entreprise.
-                        Il comporte une homepage regroupant de nombreuses statisques ainsi que différentes pages permettant d'ajouter des métiers, des employées avec leurs de temps de travail sur chaque projet et des projets. L'objectif principal était d'utiliser au maximun les fonctionnalités de <strong>Symfony</strong> comme les relations entre les <strong>entités Doctrines</strong>, les <strong>repositories</strong> et les fixtures.
-                    </p>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
-                </div>
-                <div class="img_container">
-                    <a href="#modal41" data-toggle="modal"><img src="dist/img/projetProcost/Procost1.webp"
-                        alt="Projet Procost" height="auto" width="400px"></a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project_galery">
-                    <a href="#modal42" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetProcost/Procost2.webp" alt="Projet Procost"></a>
-                </div>
-                <div class="project_galery">
-                    <a href="#modal43" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetProcost/Procost3.webp" alt="Projet Procost"></a>
-                </div>
-                <div class="project_galery">
-                    <a href="#modal44" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetProcost/Procost4.webp" alt="Projet Procost"></a>
-                </div>
-            </div>
-        </div>
-        <div id="modal41" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetProcost/Procost1.webp" alt="Projet Procost">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal42" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetProcost/Procost2.webp" alt="Projet Procost">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal43" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetProcost/Procost3.webp" alt="Projet Procost">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal44" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetProcost/Procost4.webp" alt="Projet Procost">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section_projects radiant">
-        <div class="lineBG">
-            <div class="lineBG2">
-                <div class="lineBG3">
-                    <div class="ptb_3 ptbot_6">
-                        <h2 class="section_title_colorBg text_center">IUT - Projet</h2>
-                        <p class="section_text text_center">
-                            Ce projet est un projet réalisé durant ma licence professionnelle, le principe était de découvrir <strong>Flutter</strong>.
-                        </p>
-                        <div class="container">
-                            <div class="project">
-                                <div class="img_container">
-                                    <a href="#modal51" data-toggle="modal"><img src="dist/img/projetFlutter/Reminder1.jpg"
-                                        alt="Projet Flutter" height="auto" width="400px"></a>
-                                </div>
-                                <div class="project_content">
-                                    <h2>Reminder - Flutter</h2>
-                                    <p class="project_text">
-                                        Ce projet consistait à réaliser une application mobile avec <strong>Flutter</strong> et d'utiliser une <strong>base de données distante</strong> et de stocker des<strong> données en local</strong>. J'ai donc choisi de réaliser une application mobile permettant d'enregistrer des clients et de leur attribuer des rendez-vous. Il est aussi possible d'activer des notifications de rappel pour les différents rendez-vous de chaque client à l'heure désirée.
-                                        Pour stocker les données distantes j'ai utilisé <strong>Firebase</strong>. Cela permet de garder une authentification persistante et il possible de se connecter avec plusieurs comptes pour gérer les différents utilisateurs. L'application fonctionne aussi en local avec le <strong>stockage du téléphone</strong> et ne nécessite aucune connexion.
-                                    </p>
-                                    <button disabled href="#" class="btn btn_project_section"><i
-                                            class="fas fa-eye"></i>Demo</button>
-                                    <button disabled href="#" class="btn btn_project_section"><i
-                                            class="fas fa-code"></i>Github</button>
-                                </div>
-                            </div>
-                            <div class="project">
-                                <div class="project_galery">
-                                    <a href="#modal52" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetFlutter/Reminder2.jpg" alt="Projet Flutter"></a>
-                                </div>
-                                <div class="project_galery">
-                                    <a href="#modal53" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetFlutter/Reminder3.jpg" alt="Projet Flutter"></a>
-                                </div>
-                                <div class="project_galery">
-                                    <a href="#modal54" data-toggle="modal"><img class="project_galery_image"
-                                            src="dist/img/projetFlutter/Reminder4.jpg" alt="Projet Flutter"></a>
-                                </div>
-                            </div>
+          <div class="grid_layout bgTimeline ">
+            <div class="grid_item span_2 hidden">
+              <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <a href="pages/quizz.html">
+                      <img src="dist/img/Cards/quizztut.png" alt="Illustration du Quizz" />
+                    </a>
+                  </figure>
+                  <div class="article_body">
+                    <div class="article_body_header">
+                      <div class="article_body_text">
+                        <h3>Projet IUT</h3>
+                        <h4>Quizz</h4>
+                      </div>
+                      <div class="article_body_tag">
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/html.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de html"
+                          />
                         </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/css.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de css"
+                          />
+                        </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/js.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de js"
+                          />
+                        </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/php.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de php"
+                          />
+                        </div>
+                      </div>
                     </div>
+                    <p>
+                      Ce projet a été réalisé en duo durant ma licence professionnelle, le but était de réaliser un CRUD complet en PHP afin de gérer des utilisateurs et des questions puis de développer un quiz multijoueur en utilisant les websocket. 
+                    </p>
+                    <a href="pages/quizz.html" class="read-more"> En savoir plus </a>
+                  </div>
                 </div>
+              </article>
             </div>
-        </div>
-        <div id="modal51" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
+            <div class="grid_item span_2 hidden">
+              <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <a href="pages/warmuseum.html">
+                      <img src="dist/img/Cards/warmuseum.png" alt="Illustration de warmuseum" />
+                    </a>
+                  </figure>
+                  <div class="article_body">
+                    <div class="article_body_header">
+                      <div class="article_body_text">
+                        <h3>Projet IUT</h3>
+                        <h4>War Museum</h4>
+                      </div>
+                      <div class="article_body_tag">
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/ionic.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de ionic"
+                          />
+                        </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/angular.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de angular"
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetFlutter/Reminder1.jpg" alt="Projet Flutter">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+                    <p>
+                      Le but de ce projet était de réaliser un CRUD sur le thème de notre choix, en utilsant Angular 12 ainsi que Firebase pour stocker les données. Une autre version a aussi été réalisé avec IONIC et Firebase afin de déployer une version mobile.
+                    </p>
+                    <a href="pages/warmuseum.html" class="read-more"> En savoir plus </a>
+                  </div>
                 </div>
+              </article>
             </div>
-        </div>
-        <div id="modal52" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
+            <div class="grid_item span_3 hidden">
+              <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <a href="pages/reminder.html">
+                      <img src="dist/img/Cards/reminder.png" alt="Illustration de pipboy" />
+                    </a>
+                  </figure>
+                  <div class="article_body">
+                    <div class="article_body_header">
+                      <div class="article_body_text">
+                        <h3>Projet IUT</h3>
+                        <h4>Reminder</h4>
+                      </div>
+                      <div class="article_body_tag">
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/flutter.png"
+                            width="24px"
+                            height="24px"
+                            alt=""
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetFlutter/Reminder2.jpg" alt="Projet Flutter">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+                    <p>
+                      Ce projet consistait à réaliser une application mobile avec Flutter et d'utiliser une base de données distante et de stocker des données en local. J'ai donc choisi de réaliser une application mobile permettant d'enregistrer des clients et de leur attribuer des rendez-vous.
+                    </p>
+                    <a href="pages/reminder.html" class="read-more"> En savoir plus </a>
+                  </div>
                 </div>
+              </article>
             </div>
-        </div>
-        <div id="modal53" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
+            <div class="grid_item span_3 hidden">
+              <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <a href="pages/projetTut.html">
+                      <img src="dist/img/Cards/ecabinet.png" alt="Illustration de ecabinet" />
+                    </a>
+                  </figure>
+                  <div class="article_body">
+                    <div class="article_body_header">
+                      <div class="article_body_text">
+                        <h3>Projet IUT</h3>
+                        <h4>E-Cabinet</h4>
+                      </div>
+                      <div class="article_body_tag">
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/electron.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de electron"
+                          />
+                        </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/react.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de react"
+                          />
+                        </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/ionic.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de react"
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetFlutter/Reminder3.jpg" alt="Projet Flutter">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+                    <p>
+                      L'objectif de ce projet était de délivrer une application multisupport. Le but était de partir d'une seule base de code et de déployer l'application sur plusieurs supports, notamment le mobile avec Ionic et Electron pour l'application bureau.
+                    </p>
+                    <a href="pages/projetTut.html" class="read-more"> En savoir plus </a>
+                  </div>
                 </div>
+              </article>
             </div>
-        </div>
-        <div id="modal54" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
+            <div class="grid_item span_2 hidden">
+              <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <a href="pages/fallout.html">
+                      <img src="dist/img/Cards/fallout.png" alt="Illustration de fallout" />
+                    </a>
+                  </figure>
+                  <div class="article_body">
+                    <div class="article_body_header">
+                      <div class="article_body_text">
+                        <h3>Projet Personnel</h3>
+                        <h4>Fallout</h4>
+                      </div>
+                      <div class="article_body_tag">
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/html.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de html"
+                          />
+                        </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/css.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de css"
+                          />
+                        </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/js.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de js"
+                          />
+                        </div>
+                      </div>
                     </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetFlutter/Reminder4.jpg" alt="Projet Flutter">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
+                    <p>
+                      Ce projet était un projet à rendre pour l'université. Le sujet était libre et nous avions un mois pour le réaliser. Le but était de faire un site responsive et de respecter scrupuleusement les standards W3C.
+                    </p>
+                    <a href="pages/fallout.html" class="read-more"> En savoir plus </a>
+                  </div>
                 </div>
+              </article>
             </div>
+            <div class="grid_item span_2 hidden">
+              <article>
+                <div class="article-wrapper">
+                  <figure>
+                    <a href="pages/pipboy.html">
+                      <img src="dist/img/Cards/pipboy.png" alt="Illustration de pipboy" />
+                    </a>
+                  </figure>
+                  <div class="article_body">
+                    <div class="article_body_header">
+                      <div class="article_body_text">
+                        <h3>Projet Personnel</h3>
+                        <h4>Pip-boy</h4>
+                      </div>
+                      <div class="article_body_tag">
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/html.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de html"
+                          />
+                        </div>
+                        <div class="img_container_tag">
+                          <img
+                            src="dist/img/techIcon/css.png"
+                            width="24px"
+                            height="24px"
+                            alt="Logo de css"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <p>
+                      L'idée derrière ce projet était de réaliser un inventaire ressemblant fortement au Pip-boy de la franchise Fallout. Ce système permet de drag and drop les images représentant les objets du jeux.
+                    </p>
+                    <a href="pages/pipboy.html" class="read-more"> En savoir plus </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-    </section>
-    <section class="section_projects ptb_3 grey">
-        <h2 class="section_title text_center">IUT - Projet Tutore</h2>
-        <p class="section_text text_center">
-            Ce projet est un projet réalisé durant ma licence professionnelle, le but principal était de délivrer une application <strong>multisupport</strong>.
+      </section>
+      <section id="Painting" class="section_projects text_center white ptb_3">
+        <p class="UpTitle hidden hiddenBottom">
+          DIGITAL PAINTING
         </p>
+        <div class="section_text_container">
+          <h2 class="hidden hiddenBottom">Digital Painting</h2>
+          <p class="text_center hidden hiddenBottom">
+            Quelques unes de mes créations sur Photoshop.
+          </p>
+        </div>
         <div class="container">
-            <div class="project">
-                <div class="project_content">
-                    <h2>Projet Tutoré S2 - E-cabinet</h2>
-                    <p class="project_text">
-                        L'application se présente sous la forme d'un site de gestion de cabinet d'avocat. Le principal objectif était de partir d'une seule base de code et de déployer l'application sur 
-                        plusieurs supports, notamment le mobile avec <strong>Ionic</strong> et <strong>Electron</strong> pour l'application bureau. Le design n'était pas une priorité, l'application devait tout de même être présentable. Cette application utilise <strong>React</strong>, <strong>TypeScript</strong> et <strong>MUI</strong> pour le front-end. 
-                        Une couche back-end en <strong>PHP</strong> a été réalisée pour les versions <strong>Ionic</strong> et Web. Pour la version <strong>Electron</strong> une base de données en local a été mise en place.
-                    </p>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-eye"></i>Demo</button>
-                    <button disabled href="#" class="btn btn_project_section"><i class="fas fa-code"></i>Github</button>
-                </div>
-                <div class="img_container">
-                    <a href="#modal61" data-toggle="modal"><img src="dist/img/projetElectron/electron1.JPG"
-                        alt="Projet Electron" height="auto" width="400px"></a>
-                </div>
+          <div class="project hidden hiddenBottomReduce">
+            <div class="project_galery text_center">
+              <a href="#modal100" data-toggle="modal"
+                ><img
+                  class="project_galery_image"
+                  src="dist/img/digitalPainting/digitalP1.webp"
+                  alt="Projet Painting"
+              /></a>
+              <button
+                href="#modal100"
+                data-toggle="modal"
+                class="btn btn_project_section"
+              >
+                <i class="fas fa-expand"></i>Plein écran
+              </button>
             </div>
-            <div class="project">
-                <div class="project_galery">
-                    <a href="#modal62" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetElectron/electron2.JPG" alt="Projet Electron"></a>
-                </div>
-                <div class="project_galery">
-                    <a href="#modal63" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetElectron/electron3.JPG" alt="Projet Electron"></a>
-                </div>
-                <div class="project_galery">
-                    <a href="#modal64" data-toggle="modal"><img class="project_galery_image"
-                            src="dist/img/projetElectron/electron4.JPG" alt="Projet Electron"></a>
-                </div>
+            <div class="project_galery text_center">
+              <a href="#modal101" data-toggle="modal"
+                ><img
+                  class="project_galery_image"
+                  src="dist/img/digitalPainting/digitalP2.webp"
+                  alt="Projet Painting"
+              /></a>
+              <button
+                href="#modal101"
+                data-toggle="modal"
+                class="btn btn_project_section"
+              >
+                <i class="fas fa-expand"></i>Plein écran
+              </button>
             </div>
-        </div>
-        <div id="modal61" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetElectron/electron1.JPG" alt="Projet Electron">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
+            <div class="project_galery text_center">
+              <a href="#modal102" data-toggle="modal"
+                ><img
+                  class="project_galery_image"
+                  src="dist/img/digitalPainting/digitalP3.webp"
+                  alt="Projet Painting"
+              /></a>
+              <button
+                href="#modal102"
+                data-toggle="modal"
+                class="btn btn_project_section"
+              >
+                <i class="fas fa-expand"></i>Plein écran
+              </button>
             </div>
-        </div>
-        <div id="modal62" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetElectron/electron2.JPG" alt="Projet Electron">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal63" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetElectron/electron3.JPG" alt="Projet Electron">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="modal64" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/projetElectron/electron4.JPG" alt="Projet Electron">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Painting" class="section_projects radiant">
-        <div class="lineBG">
-            <div class="lineBG2">
-                <div class="ptb_3">
-                    <h2 class="section_title_colorBg text_center">Digital Painting</h2>
-                    <p class="section_text text_center">Quelques unes de mes créations sur Photoshop.</p>
-                    <div class="container">
-                        <div class="project">
-                            <div class="project_galery text_center">
-                                <a href="#modal100" data-toggle="modal"><img class="project_galery_image"
-                                        src="dist/img/digitalPainting/digitalP1.webp" alt="Projet Painting"></a>
-                                <button href="#modal100" data-toggle="modal" class="btn btn_project_section"><i
-                                        class="fas fa-expand"></i>Plein écran</button>
-                            </div>
-                            <div class="project_galery text_center">
-                                <a href="#modal101" data-toggle="modal"><img class="project_galery_image"
-                                        src="dist/img/digitalPainting/digitalP2.webp" alt="Projet Painting"></a>
-                                <button href="#modal101" data-toggle="modal" class="btn btn_project_section"><i
-                                        class="fas fa-expand"></i>Plein écran</button>
-                            </div>
-                            <div class="project_galery text_center">
-                                <a href="#modal102" data-toggle="modal"><img class="project_galery_image"
-                                        src="dist/img/digitalPainting/digitalP3.webp" alt="Projet Painting"></a>
-                                <button href="#modal102" data-toggle="modal" class="btn btn_project_section"><i
-                                        class="fas fa-expand"></i>Plein écran</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
         <div id="modal100" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/digitalPainting/digitalP1.webp" alt="Projet Painting">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  &times;
+                </button>
+                <h4 class="modal-title">Aperçu</h4>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="dist/img/digitalPainting/digitalP1.webp"
+                  alt="Projet Painting"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn btn_project_section"
+                  type="button"
+                  data-dismiss="modal"
+                >
+                  Fermer
+                </button>
+              </div>
             </div>
+          </div>
         </div>
         <div id="modal101" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/digitalPainting/digitalP2.webp" alt="Projet Painting">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  &times;
+                </button>
+                <h4 class="modal-title">Aperçu</h4>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="dist/img/digitalPainting/digitalP2.webp"
+                  alt="Projet Painting"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn btn_project_section"
+                  type="button"
+                  data-dismiss="modal"
+                >
+                  Fermer
+                </button>
+              </div>
             </div>
+          </div>
         </div>
         <div id="modal102" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Aperçu</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img src="dist/img/digitalPainting/digitalP3.webp" alt="Projet Painting">
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn_project_section" type="button" data-dismiss="modal">Fermer</button>
-                    </div>
-                </div>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  &times;
+                </button>
+                <h4 class="modal-title">Aperçu</h4>
+              </div>
+              <div class="modal-body">
+                <img
+                  src="dist/img/digitalPainting/digitalP3.webp"
+                  alt="Projet Painting"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  class="btn btn_project_section"
+                  type="button"
+                  data-dismiss="modal"
+                >
+                  Fermer
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
     </main>
-    <button class="scrollToTopBtn" aria-hidden="true"><i class="fa fa-chevron-up fa-1x"></i></button>
-    <footer class="main_footer ptb_3" id="Footer">
-        <div class="footer_content text_center">
-            <p>Copyright &copy; 2022 HUMBERT Guillaume. Tous droits réservés.</p>
-            <div class="container">
-                <div>
-                    <div class="links_footer">
-                        <a href="https://github.com/Guillaume-H-Skg"><i class="fab fa-github-square fa-3x"></i>
-                            <p>Github</p>
-                        </a>
-                    </div>
-                    <div class="links_footer">
-                        <a href="mailto:humbertguillaume7@gmail.com"><i class="fas fa-envelope fa-3x"></i>
-                            <p>Mail</p>
-                        </a>
-                    </div>
-                    <!-- <div class="links_footer">
+    <button class="scrollToTopBtn" aria-hidden="true">
+      <i class="fa fa-chevron-up fa-1x"></i>
+    </button>
+    <footer class="main_footer ptb_3 btnToTop" id="Footer">
+      <div class="footer_content text_center">
+        <p>Copyright &copy; 2022 HUMBERT Guillaume. Tous droits réservés.</p>
+        <div class="container">
+          <div>
+            <div class="links_footer">
+              <a href="https://github.com/Guillaume-H-Skg"
+                ><i class="fab fa-github-square fa-3x"></i>
+                <p>Github</p>
+              </a>
+            </div>
+            <div class="links_footer">
+              <a href="mailto:humbertguillaume7@gmail.com"
+                ><i class="fas fa-envelope fa-3x"></i>
+                <p>Mail</p>
+              </a>
+            </div>
+            <!-- <div class="links_footer">
                         <a href="https://bio.link/guillaumehskg"><i class="fas fa-external-link-square-alt fa-3x"></i>
                             <p>Liens</p>
                         </a>
                     </div> -->
 
-                    <div class="links_footer">
-                        <a href="http://www.linkedin.com/in/guillaume-humbert-36931a226"><i
-                                class="fab fa-linkedin fa-3x"></i>
-                            <p>Linkedin</p>
-                        </a>
-                    </div>
-                </div>
+            <div class="links_footer">
+              <a href="http://www.linkedin.com/in/guillaume-humbert-36931a226"
+                ><i class="fab fa-linkedin fa-3x"></i>
+                <p>Linkedin</p>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
