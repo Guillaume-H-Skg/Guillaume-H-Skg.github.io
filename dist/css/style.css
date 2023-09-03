@@ -107,9 +107,6 @@ h4 {
   background: linear-gradient(45deg, rgba(11,55,66,1) 0%, rgba(0,80,117,1) 50%, rgba(54,139,186,1) 100%);
 }
 
-
-
-
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
@@ -445,6 +442,55 @@ font-size: 2.2rem;
 
 .side_title {
   margin: 1.5rem 0;
+}
+
+.tech_col_holder {
+  max-height: 828px;
+}
+
+.tech_col1  {
+  animation: translateBottom 60s linear infinite;
+  /* background-color: blue; */
+}
+
+.tech_col1bis {
+  animation: translateBottomBis 60s linear infinite;
+  /* background-color: red; */
+}
+
+@keyframes translateBottom {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes translateBottomBis {
+  0% {
+    transform: translateY(-200%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.tech_col2  {
+  animation: translateTop 60s linear infinite;
+  /* background-color: blue; */
+}
+
+@keyframes translateTop {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 .tech_tags {
