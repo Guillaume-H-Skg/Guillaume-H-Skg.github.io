@@ -405,6 +405,10 @@ font-size: 2.2rem;
   min-height: 432px;
 }
 
+.img_container_project {
+  max-width: 842px;
+}
+
 .img_container_techno img, .img_container_project img, .img_container_tag img {
   width: 100%;
   transition: all 1s;
@@ -545,6 +549,8 @@ font-size: 2.2rem;
 .side_container {
   width: 55%;
   max-height: 1020px;
+  display: flex;
+  justify-content: center;
 }
 
 .scroller_container {
@@ -840,9 +846,6 @@ font-size: 2.2rem;
   .ptb_3 {
     padding: 1rem;
   }
-  .ptb_4 {
-    padding: 4rem;
-  }
   .section_projects .project {
     margin: 0rem;
     padding: 0 0 1rem 0;
@@ -874,10 +877,25 @@ font-size: 2.2rem;
     padding: 2rem 4rem;
   }
 
+  .flexRow {
+    padding: 1rem;
+  }
 
-  /* .span_2, .span_2_3,  .span_3  {
-    grid-column-end: span 3;
-  } */
+  .tech_col1 {
+    animation: none;
+  }
+
+  .tech_col1bis {
+    display: none;
+  }
+
+  .tech_col2 {
+    animation: none;
+  }
+
+  .tech_col2:nth-child(2) {
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {
