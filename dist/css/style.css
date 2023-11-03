@@ -846,10 +846,10 @@ font-size: 2.2rem;
   .ptb_3 {
     padding: 1rem;
   }
-  .section_projects .project {
+  /* .section_projects .project {
     margin: 0rem;
     padding: 0 0 1rem 0;
-  }
+  } */
   .section_projects .project img {
     max-width: 600px;
     min-width: 240px;

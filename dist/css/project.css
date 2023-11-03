@@ -197,7 +197,7 @@
 @media (max-width: 850px) {
   .section_projects .project {
     margin: 0rem;
-    padding: 0 0 1rem 0;
+    /* padding: 0 0 1rem 0; */
   }
   .section_projects .project img {
     max-width: 600px;
