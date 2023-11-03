@@ -1,4 +1,4 @@
-.section_projects .project {
+/* .section_projects .project {
   margin: 2rem;
   display: flex;
   justify-content: space-between;
@@ -6,7 +6,7 @@
   flex-direction: row;
   align-items: center;
   padding: 2rem 1rem;
-}
+} */
 
 /* .section_projects.radiant .project:nth-child(1) {
     justify-content: flex-start;
@@ -207,6 +207,7 @@
   }
   .section_projects .project .project_galery {
     margin-bottom: 1rem;
+    width: 100%;
   }
 
   /* .section_projects.radiant .img_container img {
