@@ -286,6 +286,10 @@ font-size: 2.2rem;
   margin-top: 5rem;
 }
 
+.mb_3 {
+  margin-bottom: 3rem;
+}
+
 .main_nav {
   display: flex;
   justify-content: space-between;
