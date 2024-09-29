@@ -141,8 +141,160 @@
     filter: brightness(1.5);
     text-shadow: 0 0 6px hsla(0,0%,100%,.7);
     /* text-shadow: 0 0 0px hsl(219.3, 100%, 50%); */
-
 }
+
+.background_blue {
+  background-color: #637381;
+}
+
+.big_header {
+  height: 500px;
+  background-image:  url("../img/projetRetroWonder/salleArcade.jpg");
+  background-size: contain;
+  background-position: top;
+  margin-bottom: 10rem;
+  padding: 4rem 0 0 0;
+  
+}
+
+.header_card {
+  background-color: #fff;
+  box-shadow: -40px 40px 80px 0px rgba(145, 158, 171, 0.16);
+  padding: 2rem 5rem 5rem 2rem;
+  margin: auto;
+  max-width: 1000px;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  /* transform: translateY(190px); */
+}
+
+.header_info {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 7rem;
+}
+
+.header_info p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+.header_tools {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.project_container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* .project_container > div {
+  padding: 2rem 0;
+} */
+
+.project_container section {
+  padding: 2rem 0;
+}
+
+.big_header h1 {
+  font-family: "Comfortaa";
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+h3.project_title  {
+  text-transform: none;
+  color: var(--title-color);
+}
+
+.project_attribute {
+  display: flex;
+  gap: 5rem;
+  /* justify-content: space-between; */
+}
+
+.project_attribute div {
+  max-width: 45%;
+}
+
+.tools_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project_container .card_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.project_container .card_container .card {
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: -4px 4px 8px 0px rgba(145, 158, 171, 0.16);
+  align-items: center;
+  width: 33%;
+}
+
+.project_container .card_container .card div:first-child {
+  font-size: 7rem;
+  font-weight: 700;
+  padding: 0 1rem 0px 0;
+}
+
+.project_container .card_container .card .card_title {
+  color: var(--title-color);
+  /* font-weight: 400; */
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.personna_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 3.5rem 0;
+}
+
+.personna_container .personna_image {
+  padding: 2rem;
+}
+
+.personna_container .personna_quote { 
+  font-family: "Comfortaa";
+  font-size: 1.5rem;
+  padding: 2rem 0 2rem 0;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.personna_container .personna_experience {
+  padding: 4rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+
+.personna_container .personna_experience h3 {
+  padding-bottom: 1rem;
+}
+
+.personna_container .personna_experience ul {
+  list-style: disc;
+  margin: 0 0 0 32px;
+}
+
+
+
 
 @media (max-width: 1888px) {
   .section_projects .project .project_content.textRight {
